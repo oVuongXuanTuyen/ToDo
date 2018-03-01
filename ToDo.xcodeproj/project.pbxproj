@@ -19,6 +19,15 @@
 		CC024A6A204663CA000C4F1D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A69204663CA000C4F1D /* UIColor+Extensions.swift */; };
 		CC024A6D20468987000C4F1D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A6C20468987000C4F1D /* StartViewController.swift */; };
 		CC024A712046B422000C4F1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A702046B422000C4F1D /* MenuViewController.swift */; };
+		CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3242047D34F00A00449 /* SignUpViewController.swift */; };
+		CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */; };
+		CC6AF3292047DAEB00A00449 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */; };
+		CC6AF32B2047DB0000A00449 /* SignUpConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF32A2047DB0000A00449 /* SignUpConfigurator.swift */; };
+		CC6B93D420478910006E6282 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B93D320478910006E6282 /* SignInViewController.swift */; };
+		CC6B93D6204789EA006E6282 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B93D5204789EA006E6282 /* SignInPresenter.swift */; };
+		CC6B93D820478A0F006E6282 /* SignInConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B93D720478A0F006E6282 /* SignInConfigurator.swift */; };
+		CC6B93DA20478A1D006E6282 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B93D920478A1D006E6282 /* SignInRouter.swift */; };
+		CC6B93DC20479873006E6282 /* DiagonalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B93DB20479873006E6282 /* DiagonalView.swift */; };
 		CC82F75C203FCC5300CE0A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC82F75B203FCC5300CE0A0A /* AppDelegate.swift */; };
 		CC82F761203FCC5300CE0A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC82F75F203FCC5300CE0A0A /* Main.storyboard */; };
 		CC82F763203FCC5300CE0A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC82F762203FCC5300CE0A0A /* Assets.xcassets */; };
@@ -66,6 +75,15 @@
 		CC024A69204663CA000C4F1D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		CC024A6C20468987000C4F1D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CC024A702046B422000C4F1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CC6AF3242047D34F00A00449 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		CC6AF32A2047DB0000A00449 /* SignUpConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpConfigurator.swift; sourceTree = "<group>"; };
+		CC6B93D320478910006E6282 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CC6B93D5204789EA006E6282 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		CC6B93D720478A0F006E6282 /* SignInConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInConfigurator.swift; sourceTree = "<group>"; };
+		CC6B93D920478A1D006E6282 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		CC6B93DB20479873006E6282 /* DiagonalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalView.swift; sourceTree = "<group>"; };
 		CC82F758203FCC5300CE0A0A /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC82F75B203FCC5300CE0A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC82F760203FCC5300CE0A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -162,6 +180,7 @@
 		CC024A5320463C83000C4F1D /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				CC6B93DB20479873006E6282 /* DiagonalView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -234,15 +253,39 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		CC1E89ED2045647900149D97 /* Presenter */ = {
+		CC1E89ED2045647900149D97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CC6AF3232047D2FB00A00449 /* Sign Up */,
+				CC6B93D2204788B4006E6282 /* Sign In */,
 				CC024A6B2046896C000C4F1D /* StartViewController */,
 				CC024A6020464E98000C4F1D /* Base */,
 				CC024A59204645DF000C4F1D /* MenuViewController */,
 				CC024A582046420B000C4F1D /* MainTabbar */,
 			);
-			path = Presenter;
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CC6AF3232047D2FB00A00449 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				CC6AF3242047D34F00A00449 /* SignUpViewController.swift */,
+				CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */,
+				CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */,
+				CC6AF32A2047DB0000A00449 /* SignUpConfigurator.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		CC6B93D2204788B4006E6282 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				CC6B93D320478910006E6282 /* SignInViewController.swift */,
+				CC6B93D920478A1D006E6282 /* SignInRouter.swift */,
+				CC6B93D5204789EA006E6282 /* SignInPresenter.swift */,
+				CC6B93D720478A0F006E6282 /* SignInConfigurator.swift */,
+			);
+			path = "Sign In";
 			sourceTree = "<group>";
 		};
 		CC82F74F203FCC5300CE0A0A = {
@@ -274,7 +317,7 @@
 				CC1E89EA20455F2F00149D97 /* Resources */,
 				CC024A482046385E000C4F1D /* Utilities */,
 				CC024A4720463846000C4F1D /* Helper */,
-				CC1E89ED2045647900149D97 /* Presenter */,
+				CC1E89ED2045647900149D97 /* Scenes */,
 				CC1E89EC2045647300149D97 /* Model */,
 				CC1E89EB204563FC00149D97 /* View */,
 			);
@@ -621,13 +664,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6AF3292047DAEB00A00449 /* SignUpRouter.swift in Sources */,
+				CC6AF32B2047DB0000A00449 /* SignUpConfigurator.swift in Sources */,
+				CC6B93D6204789EA006E6282 /* SignInPresenter.swift in Sources */,
+				CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */,
+				CC6B93D420478910006E6282 /* SignInViewController.swift in Sources */,
 				CC024A5220463BB5000C4F1D /* UIViewController+Extensions.swift in Sources */,
 				CC024A712046B422000C4F1D /* MenuViewController.swift in Sources */,
 				CC024A6820465609000C4F1D /* UIScreen+Extensions.swift in Sources */,
+				CC6B93D820478A0F006E6282 /* SignInConfigurator.swift in Sources */,
 				CC024A5020463AED000C4F1D /* UIView+Extensions.swift in Sources */,
+				CC6B93DC20479873006E6282 /* DiagonalView.swift in Sources */,
 				CC024A5F20464A9D000C4F1D /* MainTabbarController.swift in Sources */,
 				CC024A4E2046393B000C4F1D /* UIStoryboard+Extensions.swift in Sources */,
+				CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */,
 				CC024A6D20468987000C4F1D /* StartViewController.swift in Sources */,
+				CC6B93DA20478A1D006E6282 /* SignInRouter.swift in Sources */,
 				CC82F75C203FCC5300CE0A0A /* AppDelegate.swift in Sources */,
 				CC024A6420464F0B000C4F1D /* BaseViewController.swift in Sources */,
 				CC024A6A204663CA000C4F1D /* UIColor+Extensions.swift in Sources */,
