@@ -9,6 +9,9 @@
 import UIKit
 
 class MainTabbarController: UITabBarController {
+  override func awakeFromNib() {
+    setVC()
+  }
     override func viewDidLoad() {
       super.viewDidLoad()
       setDefaults()
@@ -17,4 +20,18 @@ class MainTabbarController: UITabBarController {
     func setDefaults() {
       self.tabBar.isHidden = true
     }
+  func setVC() {
+    guard let navigationController = UIStoryboard.home.instantiateInitialViewController() as? UINavigationController else { return }
+    guard let homeVC = navigationController.topViewController as? HomeViewController else { return }
+    let configurator = HomeConfiguratorImplement.init()
+    homeVC.configurator = configurator
+    let viewControllers = [navigationController]
+    setViewControllers(viewControllers, animated: false)
+  }
+}
+
+extension MainTabbarController {
+  var startVC: StartViewController? {
+    return self.parent as? StartViewController
+  }
 }

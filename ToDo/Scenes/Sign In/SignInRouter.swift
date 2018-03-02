@@ -10,6 +10,7 @@ import Foundation
 
 protocol SignInRouter {
   func gotoSignUpVC()
+  func gotoHomeVC()
 }
 
 class SignInRouterImplement {
@@ -28,5 +29,9 @@ extension SignInRouterImplement: SignInRouter {
     signUpVC.configurator = configurator
     viewController.present(signUpVC, animated: true, completion: nil)
   }
-  
+  func gotoHomeVC() {
+    guard let startVC = viewController.presentingViewController as? StartViewController else { return }
+    viewController.dismiss(animated: true, completion: nil)
+    startVC.showHome()
+  }
 }
