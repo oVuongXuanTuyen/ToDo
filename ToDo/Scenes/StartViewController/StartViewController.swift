@@ -12,7 +12,9 @@ import SVProgressHUD
 class StartViewController: UIViewController {
   @IBOutlet weak private var menuContainerView: UIView!
   @IBOutlet weak private var tabbarContainerView: UIView!
-  
+
+  // MARK: - View life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
       menuContainerView.isHidden = true
@@ -28,9 +30,11 @@ class StartViewController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
   }
+
   // MARK: - Action
+
   func checkLogin() {
-    if true {
+    if false {
       DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
        self.showHome()
       })
@@ -40,18 +44,21 @@ class StartViewController: UIViewController {
       })
     }
   }
+
   func showHome() {
     showTabbar()
     tabbarContainerView.isHidden = false
     menuContainerView.isHidden = false
     SVProgressHUD.dismiss()
   }
+
   func showTabbar() {
     UIView.animate(withDuration: 0.28) {
       self.menuContainerView.frame = CGRect.init(x: -UIScreen.width, y: 0, width: UIScreen.width, height: UIScreen.height)
       self.tabbarContainerView.frame = self.view.frame
     }
   }
+
   func showMenu() {
     UIView.animate(withDuration: 0.28) {
       self.menuContainerView.frame = self.view.frame
@@ -60,9 +67,12 @@ class StartViewController: UIViewController {
   }
 
   func showLogin() {
-    guard let loginVC = UIStoryboard.accout.instantiateInitialViewController() else { return }
-    present(loginVC, animated: false, completion: {
+    guard let signInVC = UIStoryboard.accout.instantiateInitialViewController() as? SignInViewController else { return }
+    let configurator = SignInConfiguratorImplement.init()
+    signInVC.configurator = configurator
+    present(signInVC, animated: false, completion: {
     SVProgressHUD.dismiss()
     })
   }
+
 }

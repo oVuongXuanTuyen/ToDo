@@ -14,7 +14,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
       setDefaults()
     }
-  // MARK:- Defaults
+  // MARK: - Defaults
   func setDefaults() {
     setMenuItem()
   }
@@ -24,7 +24,7 @@ class BaseViewController: UIViewController {
     menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
     self.view.addSubview(menuButton)
   }
-  // MARK:-
+  // MARK: -
   @objc func showMenu() {
     guard let startVC = mainTabbarVC?.parent as? StartViewController else { return }
     startVC.showMenu()
