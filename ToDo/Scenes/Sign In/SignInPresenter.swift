@@ -31,7 +31,7 @@ class SignInPresenterImplement {
 extension SignInPresenterImplement: SignInPresenter {
 
   func signIn(_ username: String, _ password: String) {
-    //
+    router?.gotoHomeVC()
   }
 
   func signUp() {
