@@ -29,8 +29,11 @@ class HomeViewController: BaseViewController {
   override func rightButtonDidSelected() {
     print("DID SELECTED")
   }
+  @IBAction func createTask(_ sender: Any) {
+    presneter?.createTask()
+  }
 }
 
-extension HomeViewController: HomeView  {
+extension HomeViewController: HomeView {
 
 }

@@ -27,4 +27,11 @@ class MenuViewController: UIViewController {
   }
   @IBAction func setting(_ sender: Any) {
   }
+  @IBAction func changeMenu(_ sender: UIButton) {
+    guard let startVC = self.parent as? StartViewController else {
+      return
+    }
+    startVC.mainTabbarController?.selectedIndex = sender.tag
+    startVC.showTabbar()
+  }
 }
