@@ -15,6 +15,7 @@ protocol HomeView: AnyObject {
 
 protocol HomePresenter {
   func config(tableView: UITableView)
+  func createTask()
 }
 
 class HomePresenterImplement: NSObject {
@@ -31,6 +32,10 @@ extension HomePresenterImplement: HomePresenter {
   func config(tableView: UITableView) {
     tableView.dataSource = self
     tableView.regisNib(cell: TaskTableViewCell.self)
+  }
+
+  func createTask() {
+    router?.gotoCreateTaskVC()
   }
 }
 

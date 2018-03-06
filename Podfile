@@ -11,7 +11,7 @@ target 'ToDo' do
 	pod 'RxSwift'
 	pod 'RxCocoa'
 	pod 'SwiftHEXColors'
-
+	pod 'IQKeyboardManagerSwift'
   # Pods for ToDo
 
   target 'ToDoTests' do

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol HomeRouter {
-
+  func gotoCreateTaskVC()
 }
 class HomeRouterImplement {
   var viewController: HomeViewController?
@@ -20,5 +20,8 @@ class HomeRouterImplement {
 }
 
 extension HomeRouterImplement: HomeRouter {
-
+  func gotoCreateTaskVC() {
+    let createTaskVC = CreateTaskViewController.loadFromStoryboard(.home)
+    viewController?.navigationController?.pushViewController(createTaskVC, animated: true)
+  }
 }

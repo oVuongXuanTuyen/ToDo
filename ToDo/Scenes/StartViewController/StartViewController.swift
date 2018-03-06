@@ -8,11 +8,12 @@
 
 import UIKit
 import SVProgressHUD
+import IQKeyboardManagerSwift
 
 class StartViewController: UIViewController {
   @IBOutlet weak private var menuContainerView: UIView!
   @IBOutlet weak private var tabbarContainerView: UIView!
-  private var mainTabbarController: MainTabbarController? {
+  var mainTabbarController: MainTabbarController? {
     return childViewControllers.last as? MainTabbarController
   }
 
@@ -20,13 +21,11 @@ class StartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+      IQKeyboardManager.sharedManager().enable = true
       menuContainerView.isHidden = true
       tabbarContainerView.isHidden = true
       SVProgressHUD.show()
       checkLogin()
-      for childView in childViewControllers {
-        print(String(describing: childView))
-      }
     }
 
   override func viewDidDisappear(_ animated: Bool) {
