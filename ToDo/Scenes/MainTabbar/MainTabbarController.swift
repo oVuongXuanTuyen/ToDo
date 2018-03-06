@@ -21,11 +21,18 @@ class MainTabbarController: UITabBarController {
       self.tabBar.isHidden = true
     }
   func setVC() {
-    guard let navigationController = UIStoryboard.home.instantiateInitialViewController() as? UINavigationController else { return }
-    guard let homeVC = navigationController.topViewController as? HomeViewController else { return }
-    let configurator = HomeConfiguratorImplement.init()
-    homeVC.configurator = configurator
-    let viewControllers = [navigationController]
+    // Home VC
+    guard let homeNC = UIStoryboard.home.instantiateInitialViewController() as? UINavigationController else { return }
+    guard let homeVC = homeNC.topViewController as? HomeViewController else { return }
+    let homeConfigurator = HomeConfiguratorImplement.init()
+    homeVC.configurator = homeConfigurator
+    // Calendar VC
+    guard let calendarNC = UIStoryboard.calendar.instantiateInitialViewController() as? UINavigationController else { return }
+    guard let calendarVC = calendarNC.topViewController as? CalendarViewController else { return }
+    let calendarConfigurator = CalendarConfiguratorImplement.init()
+    calendarVC.configurator = calendarConfigurator
+    //
+    let viewControllers = [homeNC, calendarNC]
     setViewControllers(viewControllers, animated: false)
   }
 }
