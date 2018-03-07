@@ -15,16 +15,17 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
       super.viewDidLoad()
+      setMenuItem()
+      initImageView()
       setDefaults()
-    }
+  }
   // MARK: - Defaults
   func setDefaults() {
-    setMenuItem()
-    initImageView()
+
   }
 
   func setMenuItem() {
-    let menuButton = UIButton.init(frame: CGRect.init(x: 15, y: 30, width: 30, height: 30))
+    let menuButton = UIButton.init(frame: CGRect.init(x: 15, y: 20, width: 30, height: 30))
     menuButton.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
     menuButton.setImage(#imageLiteral(resourceName: "ic_menu"), for: .normal)
     menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
@@ -32,7 +33,7 @@ class BaseViewController: UIViewController {
   }
 
   func setRightButton(icon: UIImage) {
-    let rightButton = UIButton.init(frame: CGRect.init(x: UIScreen.width - 30 - 15, y: 30, width: 30, height: 30))
+    let rightButton = UIButton.init(frame: CGRect.init(x: UIScreen.width - 30 - 15, y: 20, width: 30, height: 30))
     rightButton.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
     rightButton.setImage(icon, for: .normal)
     rightButton.addTarget(self, action: #selector(rightButtonDidSelected), for: .touchUpInside)
@@ -49,10 +50,17 @@ class BaseViewController: UIViewController {
     imageView.contentMode = .scaleAspectFit
     imageView.isUserInteractionEnabled = true
     imageView.isHidden = true
+    let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(resume))
+    imageView.addGestureRecognizer(tapGesture)
   }
 
   // MARK: - Action
-
+  @objc func resume() {
+    guard let startVC = mainTabbarVC?.startVC else {
+      return
+    }
+    startVC.showTabbar()
+  }
   @objc func rightButtonDidSelected() {
     //
   }
