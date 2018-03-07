@@ -31,8 +31,13 @@ class MainTabbarController: UITabBarController {
     guard let calendarVC = calendarNC.topViewController as? CalendarViewController else { return }
     let calendarConfigurator = CalendarConfiguratorImplement.init()
     calendarVC.configurator = calendarConfigurator
+    // OverView VC
+    guard let overviewNC = UIStoryboard.overview.instantiateInitialViewController() as? UINavigationController else { return }
+    guard let overviewVC = overviewNC.topViewController as? OverviewViewController else { return }
+    let overviewConfigurator = OverviewConfiguratorImplement.init()
+    overviewVC.configurator = overviewConfigurator
     //
-    let viewControllers = [homeNC, calendarNC]
+    let viewControllers = [homeNC, calendarNC, overviewNC]
     setViewControllers(viewControllers, animated: false)
   }
 }
