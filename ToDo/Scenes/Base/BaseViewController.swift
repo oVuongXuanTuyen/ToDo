@@ -50,10 +50,17 @@ class BaseViewController: UIViewController {
     imageView.contentMode = .scaleAspectFit
     imageView.isUserInteractionEnabled = true
     imageView.isHidden = true
+    let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(resume))
+    imageView.addGestureRecognizer(tapGesture)
   }
 
   // MARK: - Action
-
+  @objc func resume() {
+    guard let startVC = mainTabbarVC?.startVC else {
+      return
+    }
+    startVC.showTabbar()
+  }
   @objc func rightButtonDidSelected() {
     //
   }
