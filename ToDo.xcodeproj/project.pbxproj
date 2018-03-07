@@ -19,6 +19,9 @@
 		CC024A6A204663CA000C4F1D /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A69204663CA000C4F1D /* UIColor+Extensions.swift */; };
 		CC024A6D20468987000C4F1D /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A6C20468987000C4F1D /* StartViewController.swift */; };
 		CC024A712046B422000C4F1D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC024A702046B422000C4F1D /* MenuViewController.swift */; };
+		CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */; };
+		CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */; };
+		CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */; };
 		CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3242047D34F00A00449 /* SignUpViewController.swift */; };
 		CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */; };
 		CC6AF3292047DAEB00A00449 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */; };
@@ -45,6 +48,8 @@
 		CCEDE84E204E27A100E44FA5 /* CreateTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE84D204E27A100E44FA5 /* CreateTaskRouter.swift */; };
 		CCEDE850204E27B100E44FA5 /* CreateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE84F204E27B100E44FA5 /* CreateTaskPresenter.swift */; };
 		CCEDE852204E27C600E44FA5 /* CreateTaskConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE851204E27C600E44FA5 /* CreateTaskConfigurator.swift */; };
+		CCEDE857204E859B00E44FA5 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE856204E859B00E44FA5 /* CalendarViewController.swift */; };
+		CCEDE859204E85DF00E44FA5 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCEDE858204E85DF00E44FA5 /* Calendar.storyboard */; };
 		CF5CAEFBE0AD6AC1A6B5966F /* Pods_ToDoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4BB9243153A5081D9B2316 /* Pods_ToDoUITests.framework */; };
 		DF50DC27AD5192D2F9A833FD /* Pods_ToDo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2747D2A12ECC1EEAEEF589ED /* Pods_ToDo.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +91,9 @@
 		CC024A69204663CA000C4F1D /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		CC024A6C20468987000C4F1D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		CC024A702046B422000C4F1D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
+		CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConfigurator.swift; sourceTree = "<group>"; };
 		CC6AF3242047D34F00A00449 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
@@ -118,6 +126,8 @@
 		CCEDE84D204E27A100E44FA5 /* CreateTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskRouter.swift; sourceTree = "<group>"; };
 		CCEDE84F204E27B100E44FA5 /* CreateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskPresenter.swift; sourceTree = "<group>"; };
 		CCEDE851204E27C600E44FA5 /* CreateTaskConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskConfigurator.swift; sourceTree = "<group>"; };
+		CCEDE856204E859B00E44FA5 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		CCEDE858204E85DF00E44FA5 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
 		EB4BB9243153A5081D9B2316 /* Pods_ToDoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +257,7 @@
 				CC82F75F203FCC5300CE0A0A /* Main.storyboard */,
 				CC024A5420463D32000C4F1D /* Account.storyboard */,
 				CC024A5620463D41000C4F1D /* Home.storyboard */,
+				CCEDE858204E85DF00E44FA5 /* Calendar.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -280,6 +291,7 @@
 		CC1E89ED2045647900149D97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CCEDE853204E855C00E44FA5 /* Calendar */,
 				CC997C0B2048E9BE008DCB15 /* CreateTask */,
 				CC997C022048E1E6008DCB15 /* Home */,
 				CC6AF3232047D2FB00A00449 /* Sign Up */,
@@ -407,6 +419,17 @@
 			path = CreateTask;
 			sourceTree = "<group>";
 		};
+		CCEDE853204E855C00E44FA5 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				CCEDE856204E859B00E44FA5 /* CalendarViewController.swift */,
+				CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */,
+				CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */,
+				CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -530,6 +553,7 @@
 				CC024A5520463D32000C4F1D /* Account.storyboard in Resources */,
 				CC82F761203FCC5300CE0A0A /* Main.storyboard in Resources */,
 				CC024A5720463D41000C4F1D /* Home.storyboard in Resources */,
+				CCEDE859204E85DF00E44FA5 /* Calendar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +581,9 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ToDo/Pods-ToDo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -568,7 +594,9 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -732,9 +760,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCEDE857204E859B00E44FA5 /* CalendarViewController.swift in Sources */,
 				CC6AF3292047DAEB00A00449 /* SignUpRouter.swift in Sources */,
 				CC6AF32B2047DB0000A00449 /* SignUpConfigurator.swift in Sources */,
 				CC6B93D6204789EA006E6282 /* SignInPresenter.swift in Sources */,
+				CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */,
 				CC997C042048E20B008DCB15 /* HomePresenter.swift in Sources */,
 				CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */,
 				CC6B93D420478910006E6282 /* SignInViewController.swift in Sources */,
@@ -751,9 +781,11 @@
 				CC024A5F20464A9D000C4F1D /* MainTabbarController.swift in Sources */,
 				CC024A4E2046393B000C4F1D /* UIStoryboard+Extensions.swift in Sources */,
 				CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */,
+				CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */,
 				CC86303720495C79002911F2 /* TaskTableViewCell.swift in Sources */,
 				CC024A6D20468987000C4F1D /* StartViewController.swift in Sources */,
 				CC997C062048E217008DCB15 /* HomeRouter.swift in Sources */,
+				CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */,
 				CC6B93DA20478A1D006E6282 /* SignInRouter.swift in Sources */,
 				CC82F75C203FCC5300CE0A0A /* AppDelegate.swift in Sources */,
 				CC024A6420464F0B000C4F1D /* BaseViewController.swift in Sources */,

@@ -12,4 +12,5 @@ extension UIStoryboard {
   static let main = UIStoryboard.init(name: "Main", bundle: nil)
   static let accout = UIStoryboard.init(name: "Account", bundle: nil)
   static let home = UIStoryboard.init(name: "Home", bundle: nil)
+  static let calendar = UIStoryboard.init(name: "Calendar", bundle: nil)
 }
