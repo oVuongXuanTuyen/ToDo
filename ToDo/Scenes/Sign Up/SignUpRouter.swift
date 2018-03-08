@@ -14,7 +14,7 @@ protocol SignUpRouter {
 }
 
 class SignUpRouterImplement {
-  fileprivate var viewController: SignUpViewController
+  fileprivate weak var viewController: SignUpViewController?
 
   init(viewController: SignUpViewController) {
     self.viewController = viewController
@@ -23,11 +23,11 @@ class SignUpRouterImplement {
 
 extension SignUpRouterImplement: SignUpRouter {
   func gotoSignInVC() {
-    viewController.dismiss(animated: true, completion: nil)
+    viewController?.dismiss(animated: true, completion: nil)
   }
 
   func gotoHomeVC() {
-    guard let signInVC = viewController.presentingViewController as? SignInViewController else { return }
+    guard let signInVC = viewController?.presentingViewController as? SignInViewController else { return }
     guard let startVC = signInVC.presentingViewController as? StartViewController else { return }
     startVC.dismiss(animated: true, completion: nil)
     startVC.showHome()

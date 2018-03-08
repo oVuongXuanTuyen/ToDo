@@ -12,7 +12,7 @@ protocol HomeRouter {
   func gotoCreateTaskVC()
 }
 class HomeRouterImplement {
-  var viewController: HomeViewController?
+  weak var viewController: HomeViewController?
 
   init(viewController: HomeViewController) {
     self.viewController = viewController
