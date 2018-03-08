@@ -9,29 +9,29 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-  @IBAction func close(_ sender: Any) {
-    guard let startVC = self.parent as? StartViewController else {
-      return
+    @IBAction func close(_ sender: Any) {
+        guard let startVC = self.parent as? StartViewController else {
+            return
+        }
+        startVC.showTabbar()
     }
-    startVC.showTabbar()
-  }
-  @IBAction func logout(_ sender: Any) {
-    guard let startVC = self.parent as? StartViewController else {
-      return
+    @IBAction func logout(_ sender: Any) {
+        guard let startVC = self.parent as? StartViewController else {
+            return
+        }
+        startVC.showLogin()
     }
-    startVC.showLogin()
-  }
-  @IBAction func setting(_ sender: Any) {
-  }
-  @IBAction func changeMenu(_ sender: UIButton) {
-    guard let startVC = self.parent as? StartViewController else {
-      return
+    @IBAction func setting(_ sender: Any) {
     }
-    startVC.mainTabbarController?.selectedIndex = sender.tag
-    startVC.showTabbar()
-  }
+    @IBAction func changeMenu(_ sender: UIButton) {
+        guard let startVC = self.parent as? StartViewController else {
+            return
+        }
+        startVC.mainTabbarController?.selectedIndex = sender.tag
+        startVC.showTabbar()
+    }
 }

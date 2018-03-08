@@ -114,7 +114,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsI-zJ-Nla">
-                                <rect key="frame" x="315" y="281" width="45" height="45"/>
+                                <rect key="frame" x="315" y="298" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MsI-zJ-Nla" secondAttribute="height" multiplier="1:1" id="BJd-Yn-opU"/>
@@ -149,7 +149,7 @@
                             <constraint firstItem="4ax-Vd-oCz" firstAttribute="top" secondItem="XBu-ju-6VI" secondAttribute="bottom" id="lCK-wT-nNv"/>
                             <constraint firstItem="rDx-fe-UbB" firstAttribute="top" secondItem="VS1-r8-ADu" secondAttribute="top" id="pRh-fj-ksz"/>
                             <constraint firstItem="VS1-r8-ADu" firstAttribute="trailing" secondItem="rDx-fe-UbB" secondAttribute="trailing" id="rKF-5x-VSr"/>
-                            <constraint firstItem="XBu-ju-6VI" firstAttribute="top" secondItem="MsI-zJ-Nla" secondAttribute="bottom" constant="35" id="reu-z4-eLb"/>
+                            <constraint firstItem="XBu-ju-6VI" firstAttribute="top" secondItem="MsI-zJ-Nla" secondAttribute="bottom" constant="18" id="reu-z4-eLb"/>
                             <constraint firstItem="VS1-r8-ADu" firstAttribute="trailing" secondItem="MsI-zJ-Nla" secondAttribute="trailing" constant="15" id="zya-ds-5rh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VS1-r8-ADu"/>

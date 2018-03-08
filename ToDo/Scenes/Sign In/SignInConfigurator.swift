@@ -9,17 +9,17 @@
 import Foundation
 
 protocol SignInConfigurator {
-  func config(viewController: SignInViewController)
+    func config(viewController: SignInViewController)
 }
 
 class SignInConfiguratorImplement {
-
+    
 }
 
 extension SignInConfiguratorImplement: SignInConfigurator {
-  func config(viewController: SignInViewController) {
-    let router = SignInRouterImplement.init(viewController: viewController)
-    let presenter = SignInPresenterImplement.init(router: router, view: viewController)
-    viewController.presenter = presenter
-  }
+    func config(viewController: SignInViewController) {
+        let router = SignInRouterImplement.init(viewController: viewController)
+        let presenter = SignInPresenterImplement.init(router: router, view: viewController)
+        viewController.presenter = presenter
+    }
 }

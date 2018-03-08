@@ -9,17 +9,16 @@
 import Foundation
 
 protocol CalendarConfigurator {
-  func config(viewController: CalendarViewController)
+    func config(viewController: CalendarViewController)
 }
 
-class CalendarConfiguratorImplement {
-  
+class CalendarConfiguratorImplement {  
 }
 
 extension CalendarConfiguratorImplement: CalendarConfigurator {
-  func config(viewController: CalendarViewController) {
-    let router = CalendarRouterImplement.init(viewController: viewController)
-    let presenter = CalendarPresenterImplement.init(view: viewController, router: router)
-    viewController.presenter = presenter
-  }
+    func config(viewController: CalendarViewController) {
+        let router = CalendarRouterImplement.init(viewController: viewController)
+        let presenter = CalendarPresenterImplement.init(view: viewController, router: router)
+        viewController.presenter = presenter
+    }
 }

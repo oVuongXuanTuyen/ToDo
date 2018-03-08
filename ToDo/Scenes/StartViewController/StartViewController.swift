@@ -11,80 +11,82 @@ import SVProgressHUD
 import IQKeyboardManagerSwift
 
 class StartViewController: UIViewController {
-  @IBOutlet weak private var menuContainerView: UIView!
-  @IBOutlet weak private var tabbarContainerView: UIView!
-  var mainTabbarController: MainTabbarController? {
-    return childViewControllers.last as? MainTabbarController
-  }
-
-  // MARK: - View life cycle
-
+    @IBOutlet weak private var menuContainerView: UIView!
+    @IBOutlet weak private var tabbarContainerView: UIView!
+    var mainTabbarController: MainTabbarController? {
+        return childViewControllers.last as? MainTabbarController
+    }
+    
+    // MARK: - View life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      IQKeyboardManager.sharedManager().enable = true
-      menuContainerView.isHidden = true
-      tabbarContainerView.isHidden = true
-      SVProgressHUD.show()
-      checkLogin()
+        IQKeyboardManager.sharedManager().enable = true
+        menuContainerView.isHidden = true
+        tabbarContainerView.isHidden = true
+        SVProgressHUD.show()
+        checkLogin()
     }
-
-  override func viewDidDisappear(_ animated: Bool) {
-    super.viewDidDisappear(animated)
-  }
-
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-  }
-
-  // MARK: - Action
-
-  func checkLogin() {
-    if true {
-      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
-       self.showHome()
-      })
-    } else {
-      DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
-        self.showLogin()
-      })
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
-  }
-
-  func showHome() {
-    showTabbar()
-    tabbarContainerView.isHidden = false
-    menuContainerView.isHidden = false
-    SVProgressHUD.dismiss()
-  }
-
-  func showTabbar() {
-    if let navigationController = self.mainTabbarController?.selectedViewController as? UINavigationController {
-      if let baseVC = navigationController.topViewController as? BaseViewController {
-        baseVC.hideMenu()
-      }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
-
-    UIView.animate(withDuration: 0.28) {
-      self.menuContainerView.frame = CGRect.init(x: -UIScreen.width, y: 0, width: UIScreen.width, height: UIScreen.height)
-      self.tabbarContainerView.frame = self.view.frame
+    
+    // MARK: - Action
+    
+    func checkLogin() {
+        if true {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                self.showHome()
+            })
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
+                self.showLogin()
+            })
+        }
     }
-  }
-
-  func showMenu() {
-    UIView.animate(withDuration: 0.28) {
-      self.menuContainerView.frame = self.view.frame
-      self.tabbarContainerView.frame = CGRect.init(x: 0.75 * UIScreen.width, y: 0.25 * UIScreen.height, width: 0.5 * UIScreen.width, height: 0.5 * UIScreen.height)
+    
+    func showHome() {
+        showTabbar()
+        tabbarContainerView.isHidden = false
+        menuContainerView.isHidden = false
+        SVProgressHUD.dismiss()
     }
-  }
-
-  func showLogin() {
-    guard let signInVC = UIStoryboard.accout.instantiateInitialViewController() as? SignInViewController else { return }
-    tabbarContainerView.isHidden = true
-    menuContainerView.isHidden = true
-    let configurator = SignInConfiguratorImplement.init()
-    signInVC.configurator = configurator
-    present(signInVC, animated: false, completion: {
-    SVProgressHUD.dismiss()
-    })
-  }
+    
+    func showTabbar() {
+        if let navigationController = self.mainTabbarController?.selectedViewController as? UINavigationController {
+            if let baseVC = navigationController.topViewController as? BaseViewController {
+                baseVC.hideMenu()
+            }
+        }
+        
+        UIView.animate(withDuration: 0.28) {
+            self.menuContainerView.frame = CGRect.init(x: -UIScreen.width, y: 0, width: UIScreen.width, height: UIScreen.height)
+            self.tabbarContainerView.frame = self.view.frame
+        }
+    }
+    
+    func showMenu() {
+        UIView.animate(withDuration: 0.28) {
+            self.menuContainerView.frame = self.view.frame
+            self.tabbarContainerView.frame = CGRect.init(x: 0.75 * UIScreen.width, y: 0.25 * UIScreen.height, width: 0.5 * UIScreen.width, height: 0.5 * UIScreen.height)
+        }
+    }
+    
+    func showLogin() {
+        guard let signInVC = UIStoryboard.accout.instantiateInitialViewController() as? SignInViewController else {
+            return
+        }
+        tabbarContainerView.isHidden = true
+        menuContainerView.isHidden = true
+        let configurator = SignInConfiguratorImplement.init()
+        signInVC.configurator = configurator
+        present(signInVC, animated: false, completion: {
+            SVProgressHUD.dismiss()
+        })
+    }
 }

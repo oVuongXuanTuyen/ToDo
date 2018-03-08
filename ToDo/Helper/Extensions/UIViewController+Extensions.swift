@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIViewController {
-  class func loadFromStoryboard(_ storyboard: UIStoryboard) -> UIViewController {
-    return storyboard.instantiateViewController(withIdentifier: String(describing: self))
-  }
+    class func loadFromStoryboard(_ storyboard: UIStoryboard) -> UIViewController {
+        return storyboard.instantiateViewController(withIdentifier: String(describing: self))
+    }
 }

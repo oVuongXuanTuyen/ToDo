@@ -8,17 +8,17 @@
 
 import Foundation
 protocol HomeConfigurator {
-  func config(viewController: HomeViewController)
+    func config(viewController: HomeViewController)
 }
 
 class HomeConfiguratorImplement {
-
+    
 }
 
 extension HomeConfiguratorImplement: HomeConfigurator {
-  func config(viewController: HomeViewController) {
-    let router = HomeRouterImplement.init(viewController: viewController)
-    let presenter = HomePresenterImplement.init(view: viewController, router: router)
-    viewController.presneter = presenter
-  }
+    func config(viewController: HomeViewController) {
+        let router = HomeRouterImplement.init(viewController: viewController)
+        let presenter = HomePresenterImplement.init(view: viewController, router: router)
+        viewController.presneter = presenter
+    }
 }
