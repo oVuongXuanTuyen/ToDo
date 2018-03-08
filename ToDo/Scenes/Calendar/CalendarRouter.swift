@@ -13,7 +13,7 @@ protocol CalendarRouter {
 }
 
 class CalendarRouterImplement {
-  var viewController: CalendarViewController?
+  weak var viewController: CalendarViewController?
 
   init(viewController: CalendarViewController?) {
     self.viewController = viewController

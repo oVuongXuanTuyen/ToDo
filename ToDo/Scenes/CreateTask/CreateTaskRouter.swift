@@ -13,7 +13,7 @@ protocol CreateTaskRouter {
 }
 
 class CreateTaskRouterImplement {
-  var viewController: CreateTaskViewController?
+  weak var viewController: CreateTaskViewController?
 
   init(viewController: CreateTaskViewController) {
     self.viewController = viewController

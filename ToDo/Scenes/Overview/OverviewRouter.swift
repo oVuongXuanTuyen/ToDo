@@ -13,7 +13,7 @@ protocol OverviewRouter {
 }
 
 class OverviewRouterImplement {
-  var viewController: OverviewViewController?
+  weak var viewController: OverviewViewController?
 
   init(viewController: OverviewViewController) {
     self.viewController = viewController
