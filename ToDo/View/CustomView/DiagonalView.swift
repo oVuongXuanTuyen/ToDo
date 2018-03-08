@@ -18,7 +18,7 @@ class DiagonalView: UIView {
     CGPoint.zero,
     CGPoint(x: 0, y: 1),
     CGPoint(x: 1, y: 1),
-    CGPoint(x: 1, y: -40)
+    CGPoint(x: 1, y: -60)
   ]
   private lazy var shapeLayer: CAShapeLayer = {
     let layer = CAShapeLayer()
