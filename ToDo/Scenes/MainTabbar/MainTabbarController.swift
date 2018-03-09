@@ -57,7 +57,14 @@ class MainTabbarController: UITabBarController {
         }
         let groupsConfigurator = GroupsConfiguratorImplement.init()
         groupsVC.configurator = groupsConfigurator
-        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC]
+        // Profile VC
+        guard  let profileVC = ProfileViewController.loadFromStoryboard(UIStoryboard.accout) as? ProfileViewController else {
+            return
+        }
+        let profileConfigurator = ProfileConfiguratorImplement()
+        profileVC.configurator = profileConfigurator
+        //
+        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, profileVC]
         setViewControllers(viewControllers, animated: false)
     }
 }

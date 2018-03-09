@@ -28,6 +28,10 @@
 		CC04E28520512D9A00D0F23E /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */; };
 		CC04E28620512D9A00D0F23E /* GroupsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */; };
 		CC09BD312052186F007634D9 /* DiagonalSeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD302052186F007634D9 /* DiagonalSeperatorView.swift */; };
+		CC09BD45205283A0007634D9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD44205283A0007634D9 /* ProfileViewController.swift */; };
+		CC09BD47205283AF007634D9 /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD46205283AF007634D9 /* ProfileRouter.swift */; };
+		CC09BD49205283C2007634D9 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD48205283C2007634D9 /* ProfilePresenter.swift */; };
+		CC09BD4B205283CF007634D9 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD4A205283CF007634D9 /* ProfileConfigurator.swift */; };
 		CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */; };
 		CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */; };
 		CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */; };
@@ -115,6 +119,10 @@
 		CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsTableViewCell.xib; sourceTree = "<group>"; };
 		CC09BD302052186F007634D9 /* DiagonalSeperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalSeperatorView.swift; sourceTree = "<group>"; };
+		CC09BD44205283A0007634D9 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CC09BD46205283AF007634D9 /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		CC09BD48205283C2007634D9 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		CC09BD4A205283CF007634D9 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
 		CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
 		CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 		CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConfigurator.swift; sourceTree = "<group>"; };
@@ -293,6 +301,17 @@
 			path = Groups;
 			sourceTree = "<group>";
 		};
+		CC09BD4320528359007634D9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CC09BD44205283A0007634D9 /* ProfileViewController.swift */,
+				CC09BD46205283AF007634D9 /* ProfileRouter.swift */,
+				CC09BD48205283C2007634D9 /* ProfilePresenter.swift */,
+				CC09BD4A205283CF007634D9 /* ProfileConfigurator.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		CC1E89E920455F1B00149D97 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +356,7 @@
 		CC1E89ED2045647900149D97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CC09BD4320528359007634D9 /* Profile */,
 				CC04E27A205120F700D0F23E /* Groups */,
 				CCB38B23204FB816007A9C2F /* Overview */,
 				CCEDE853204E855C00E44FA5 /* Calendar */,
@@ -850,6 +870,7 @@
 				CC6B93D820478A0F006E6282 /* SignInConfigurator.swift in Sources */,
 				CC024A5020463AED000C4F1D /* UIView+Extensions.swift in Sources */,
 				CC6B93DC20479873006E6282 /* DiagonalView.swift in Sources */,
+				CC09BD49205283C2007634D9 /* ProfilePresenter.swift in Sources */,
 				CC024A5F20464A9D000C4F1D /* MainTabbarController.swift in Sources */,
 				CC024A4E2046393B000C4F1D /* UIStoryboard+Extensions.swift in Sources */,
 				CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */,
@@ -862,6 +883,7 @@
 				CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */,
 				CC6B93DA20478A1D006E6282 /* SignInRouter.swift in Sources */,
 				CC04E27E2051214D00D0F23E /* GroupsRouter.swift in Sources */,
+				CC09BD45205283A0007634D9 /* ProfileViewController.swift in Sources */,
 				CC82F75C203FCC5300CE0A0A /* AppDelegate.swift in Sources */,
 				CC024A6420464F0B000C4F1D /* BaseViewController.swift in Sources */,
 				CC024A6A204663CA000C4F1D /* UIColor+Extensions.swift in Sources */,
@@ -869,6 +891,8 @@
 				CC997C0D2048E9D3008DCB15 /* CreateTaskViewController.swift in Sources */,
 				CCB38B2B204FB94B007A9C2F /* OverviewConfigurator.swift in Sources */,
 				CC86303A20495E61002911F2 /* UITableView+Extension.swift in Sources */,
+				CC09BD4B205283CF007634D9 /* ProfileConfigurator.swift in Sources */,
+				CC09BD47205283AF007634D9 /* ProfileRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
