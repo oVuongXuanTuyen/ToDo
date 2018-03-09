@@ -19,7 +19,7 @@ protocol GroupsPresenter {
 class GroupsPresenterImplement: NSObject {
     weak var view: GroupsView?
     var router: GroupsRouter?
-    
+
     init(view: GroupsView?, router: GroupsRouter?) {
         self.view = view
         self.router = router
@@ -38,7 +38,7 @@ extension GroupsPresenterImplement: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let groupsCell = tableView.dequeueReusableCell(GroupsTableViewCell.self) as? GroupsTableViewCell else {
             return UITableViewCell()

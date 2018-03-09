@@ -9,11 +9,11 @@
 import UIKit
 
 class GroupsViewController: BaseViewController {
-    
+
     var presenter: GroupsPresenter?
     var configurator: GroupsConfigurator?
     @IBOutlet weak private var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)
@@ -26,7 +26,7 @@ class GroupsViewController: BaseViewController {
     }
 }
 extension GroupsViewController: GroupsView {
-    
+
     func reloadTableView() {
         tableView.reloadData()
     }

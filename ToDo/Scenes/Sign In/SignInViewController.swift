@@ -13,12 +13,12 @@ class SignInViewController: UIViewController {
     var configurator: SignInConfigurator?
     @IBOutlet weak private var usernameTextField: UITextField!
     @IBOutlet weak private var passwordTextField: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)
     }
-    
+
     // MARK: - IBAction
     @IBAction func signIn(_ sender: Any) {
         guard let username = usernameTextField.text, let password = passwordTextField.text else {
@@ -34,11 +34,11 @@ class SignInViewController: UIViewController {
     @IBAction func forgotPassword(_ sender: Any) {
         presenter?.forgotPassword()
     }
-    
+
     func verifiInput() -> Bool {
         return true
     }
 }
 extension SignInViewController: SignInView {
-    
+
 }

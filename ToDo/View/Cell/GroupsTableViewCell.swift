@@ -16,12 +16,12 @@ class GroupsTableViewCell: UITableViewCell {
     @IBOutlet weak private var seperatorLine: UIView!
     private var indexPath: IndexPath?
     weak var delegate: GroupsTableViewCellDelegate?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = UITableViewCellSelectionStyle.none
     }
-    
+
     @IBAction func didSelected(_ sender: UIButton, forEvent event: UIEvent) {
         guard let index = indexPath else {
             return
@@ -36,7 +36,7 @@ class GroupsTableViewCell: UITableViewCell {
             delegate?.didSelectedRowAtIndex(index.row + 1)
         }
     }
-    
+
     func config(indexPath: IndexPath?) {
         self.indexPath = indexPath
     }

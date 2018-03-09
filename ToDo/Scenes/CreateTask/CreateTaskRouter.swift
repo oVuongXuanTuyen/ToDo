@@ -8,17 +8,17 @@
 
 import UIKit
 
-protocol CreateTaskRouter {  
+protocol CreateTaskRouter {
 }
 
 class CreateTaskRouterImplement {
     weak var viewController: CreateTaskViewController?
-    
+
     init(viewController: CreateTaskViewController) {
         self.viewController = viewController
     }
 }
 
 extension CreateTaskRouterImplement: CreateTaskRouter {
-    
+
 }

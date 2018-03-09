@@ -19,7 +19,7 @@ protocol CalendarPresenter {
 class CalendarPresenterImplement: NSObject {
     weak var view: CalendarView?
     var router: CalendarRouter?
-    
+
     init(view: CalendarView?, router: CalendarRouter?) {
         self.view = view
         self.router = router
@@ -37,7 +37,7 @@ extension CalendarPresenterImplement: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let taskCell = tableView.dequeueReusableCell(TaskTableViewCell.self) else { return UITableViewCell() }
         return taskCell

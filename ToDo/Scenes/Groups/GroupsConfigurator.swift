@@ -13,7 +13,7 @@ protocol GroupsConfigurator {
 }
 
 class GroupsConfiguratorImplement {
-    
+
 }
 
 extension GroupsConfiguratorImplement: GroupsConfigurator {

@@ -16,7 +16,7 @@ class MainTabbarController: UITabBarController {
         super.viewDidLoad()
         setDefaults()
     }
-    
+
     func setDefaults() {
         self.tabBar.isHidden = true
     }

@@ -14,7 +14,7 @@ class CalendarViewController: BaseViewController {
     @IBOutlet weak private var tableView: UITableView!
     var presenter: CalendarPresenter?
     var configurator: CalendarConfigurator?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)

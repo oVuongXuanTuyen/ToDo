@@ -9,17 +9,17 @@
 import Foundation
 
 protocol OverviewView: AnyObject {
-    
+
 }
 
 protocol OverviewPresenter {
-    
+
 }
 
 class OverviewPresenterImplement {
     weak var view: OverviewView?
     var router: OverviewRouter?
-    
+
     init(view: OverviewView?, router: OverviewRouter) {
         self.view = view
         self.router = router
@@ -27,5 +27,5 @@ class OverviewPresenterImplement {
 }
 
 extension OverviewPresenterImplement: OverviewPresenter {
-    
+
 }

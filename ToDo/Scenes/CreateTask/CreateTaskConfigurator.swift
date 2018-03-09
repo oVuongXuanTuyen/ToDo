@@ -13,7 +13,7 @@ protocol CreateTaskConfigurator {
 }
 
 class CreateTaskConfiguratorImplement {
-    
+
 }
 
 extension CreateTaskConfiguratorImplement: CreateTaskConfigurator {

@@ -13,7 +13,7 @@ protocol SignInConfigurator {
 }
 
 class SignInConfiguratorImplement {
-    
+
 }
 
 extension SignInConfiguratorImplement: SignInConfigurator {

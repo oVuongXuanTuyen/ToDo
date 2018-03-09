@@ -12,7 +12,7 @@ class OverviewViewController: BaseViewController {
     @IBOutlet weak private var snoozedCircleView: CircleView!
     @IBOutlet weak private var overdueCircleView: CircleView!
     @IBOutlet weak private var completedCircleView: CircleView!
-    
+
     var presenter: OverviewPresenterImplement?
     var configurator: OverviewConfigurator?
     override func viewDidLoad() {
@@ -36,5 +36,5 @@ class OverviewViewController: BaseViewController {
     }
 }
 extension OverviewViewController: OverviewView {
-    
+
 }

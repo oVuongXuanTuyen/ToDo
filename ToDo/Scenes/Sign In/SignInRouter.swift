@@ -15,14 +15,14 @@ protocol SignInRouter {
 
 class SignInRouterImplement {
     fileprivate weak var viewController: SignInViewController?
-    
+
     init(viewController: SignInViewController) {
         self.viewController = viewController
     }
 }
 
 extension SignInRouterImplement: SignInRouter {
-    
+
     func gotoSignUpVC() {
         guard let signUpVC = SignUpViewController.loadFromStoryboard(.accout) as? SignUpViewController else {
             return

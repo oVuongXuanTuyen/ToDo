@@ -12,7 +12,7 @@ import CoreGraphics
 
 class BaseViewController: UIViewController {
     private var imageView: UIImageView = UIImageView.init(frame: CGRect.zero)
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setMenuItem()
@@ -21,9 +21,8 @@ class BaseViewController: UIViewController {
     }
     // MARK: - Defaults
     func setDefaults() {
-        
     }
-    
+
     func setMenuItem() {
         let menuButton = UIButton.init(frame: CGRect.init(x: 15, y: 20, width: 30, height: 30))
         menuButton.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
@@ -31,7 +30,7 @@ class BaseViewController: UIViewController {
         menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
         self.view.addSubview(menuButton)
     }
-    
+
     func setRightButton(icon: UIImage) {
         let rightButton = UIButton.init(frame: CGRect.init(x: UIScreen.width - 30 - 15, y: 20, width: 30, height: 30))
         rightButton.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
@@ -53,7 +52,7 @@ class BaseViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(resume))
         imageView.addGestureRecognizer(tapGesture)
     }
-    
+
     // MARK: - Action
     @objc func resume() {
         guard let startVC = mainTabbarVC?.startVC else {
@@ -72,11 +71,11 @@ class BaseViewController: UIViewController {
         self.takeScreenShot()
         startVC.showMenu()
     }
-    
+
     func hideMenu() {
         imageView.isHidden = true
     }
-    
+
     func takeScreenShot() {
         UIGraphicsBeginImageContext(view.frame.size)
         guard let context = UIGraphicsGetCurrentContext() else {
@@ -87,12 +86,12 @@ class BaseViewController: UIViewController {
         UIGraphicsEndImageContext()
         imageView.image = image
         imageView.isHidden = false
-        
+
     }
     func showHUD() {
         SVProgressHUD.show()
     }
-    
+
     func hideHUD() {
         SVProgressHUD.dismiss()
     }

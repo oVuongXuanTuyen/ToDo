@@ -16,9 +16,9 @@ class StartViewController: UIViewController {
     var mainTabbarController: MainTabbarController? {
         return childViewControllers.last as? MainTabbarController
     }
-    
+
     // MARK: - View life cycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         IQKeyboardManager.sharedManager().enable = true
@@ -27,17 +27,16 @@ class StartViewController: UIViewController {
         SVProgressHUD.show()
         checkLogin()
     }
-    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+
     // MARK: - Action
-    
+
     func checkLogin() {
         if true {
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3, execute: {
@@ -49,34 +48,34 @@ class StartViewController: UIViewController {
             })
         }
     }
-    
+
     func showHome() {
         showTabbar()
         tabbarContainerView.isHidden = false
         menuContainerView.isHidden = false
         SVProgressHUD.dismiss()
     }
-    
+
     func showTabbar() {
         if let navigationController = self.mainTabbarController?.selectedViewController as? UINavigationController {
             if let baseVC = navigationController.topViewController as? BaseViewController {
                 baseVC.hideMenu()
             }
         }
-        
+
         UIView.animate(withDuration: 0.28) {
             self.menuContainerView.frame = CGRect.init(x: -UIScreen.width, y: 0, width: UIScreen.width, height: UIScreen.height)
             self.tabbarContainerView.frame = self.view.frame
         }
     }
-    
+
     func showMenu() {
         UIView.animate(withDuration: 0.28) {
             self.menuContainerView.frame = self.view.frame
             self.tabbarContainerView.frame = CGRect.init(x: 0.75 * UIScreen.width, y: 0.25 * UIScreen.height, width: 0.5 * UIScreen.width, height: 0.5 * UIScreen.height)
         }
     }
-    
+
     func showLogin() {
         guard let signInVC = UIStoryboard.accout.instantiateInitialViewController() as? SignInViewController else {
             return

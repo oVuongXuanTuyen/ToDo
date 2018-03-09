@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         configurator?.config(viewController: self)
     }
-    
+
     // MARK: - UIAction
     @IBAction func signUp(_ sender: Any) {
         guard let name = nameTextField.text, let email = emailTextField.text, let password = passwordTextField.text else {
@@ -34,12 +34,12 @@ class SignUpViewController: UIViewController {
     @IBAction func termsAndCondition(_ sender: Any) {
         presenter?.showTermsAndCodition()
     }
-    
+
     func validate() -> Bool {
         return true
     }
-    
+
 }
 
-extension SignUpViewController: SignUpView {  
+extension SignUpViewController: SignUpView {
 }

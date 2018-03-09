@@ -11,7 +11,7 @@ import UIKit
 class CreateTaskViewController: BaseViewController {
     var presenter: CreateTaskPresenter?
     var configurator: CreateTaskConfigurator?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)
@@ -23,5 +23,5 @@ class CreateTaskViewController: BaseViewController {
     }
 }
 
-extension CreateTaskViewController: CreateTaskView {  
+extension CreateTaskViewController: CreateTaskView {
 }

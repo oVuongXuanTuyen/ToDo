@@ -25,7 +25,7 @@ class DiagonalView: UIView {
         self.layer.insertSublayer(layer, at: 0)
         return layer
     }()
-    
+
     override func layoutSubviews() {
         shapeLayer.fillColor = fillColor.cgColor
         let path = UIBezierPath()
@@ -36,7 +36,7 @@ class DiagonalView: UIView {
         path.close()
         shapeLayer.path = path.cgPath
     }
-    
+
     private func convert(_ relativePoint: CGPoint) -> CGPoint {
         return CGPoint(x: relativePoint.x * bounds.width + bounds.origin.x, y: relativePoint.y * bounds.height + bounds.origin.y)
     }

@@ -35,5 +35,5 @@ class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController: HomeView {
-    
+
 }

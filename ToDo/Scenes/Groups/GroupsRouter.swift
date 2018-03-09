@@ -9,17 +9,17 @@
 import Foundation
 
 protocol GroupsRouter {
-    
+
 }
 
 class GroupsRouterImplement {
     fileprivate weak var viewController: GroupsViewController?
-    
+
     init(viewController: GroupsViewController?) {
         self.viewController = viewController
     }
 }
 
 extension GroupsRouterImplement: GroupsRouter {
-    
+
 }

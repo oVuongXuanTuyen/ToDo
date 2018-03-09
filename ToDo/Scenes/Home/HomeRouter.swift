@@ -13,7 +13,7 @@ protocol HomeRouter {
 }
 class HomeRouterImplement {
     weak var viewController: HomeViewController?
-    
+
     init(viewController: HomeViewController) {
         self.viewController = viewController
     }

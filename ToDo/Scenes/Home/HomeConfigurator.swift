@@ -12,7 +12,7 @@ protocol HomeConfigurator {
 }
 
 class HomeConfiguratorImplement {
-    
+
 }
 
 extension HomeConfiguratorImplement: HomeConfigurator {

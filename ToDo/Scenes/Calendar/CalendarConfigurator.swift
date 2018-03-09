@@ -12,7 +12,7 @@ protocol CalendarConfigurator {
     func config(viewController: CalendarViewController)
 }
 
-class CalendarConfiguratorImplement {  
+class CalendarConfiguratorImplement {
 }
 
 extension CalendarConfiguratorImplement: CalendarConfigurator {

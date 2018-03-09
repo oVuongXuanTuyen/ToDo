@@ -9,16 +9,16 @@
 import Foundation
 
 protocol CalendarRouter {
-    
+
 }
 
 class CalendarRouterImplement {
     weak var viewController: CalendarViewController?
-    
+
     init(viewController: CalendarViewController?) {
         self.viewController = viewController
     }
 }
 
-extension CalendarRouterImplement: CalendarRouter {  
+extension CalendarRouterImplement: CalendarRouter {
 }

@@ -34,7 +34,7 @@ class CircleView: UIView {
         self.addSubview(countLabel)
         self.addSubview(percentLabel)
     }
-    
+
     init(frame: CGRect, type: OverviewType) {
         super.init(frame: frame)
         self.backgroundColor = .clear
@@ -43,7 +43,7 @@ class CircleView: UIView {
         self.addSubview(countLabel)
         self.addSubview(percentLabel)
     }
-    
+
     override func draw(_ rect: CGRect) {
         addCountLabel(frame)
         addTitleLabel(frame)

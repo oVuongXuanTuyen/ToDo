@@ -13,7 +13,7 @@ extension UITableView {
         let reuseID = String(describing: cell)
         self.register(UINib.init(nibName: reuseID, bundle: nil), forCellReuseIdentifier: reuseID)
     }
-    
+
     func dequeueReusableCell(_ cell: UITableViewCell.Type) -> UITableViewCell? {
         return self.dequeueReusableCell(withIdentifier: String(describing: cell))
     }

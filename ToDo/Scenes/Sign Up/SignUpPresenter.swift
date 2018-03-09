@@ -9,7 +9,7 @@
 import Foundation
 
 protocol SignUpView: AnyObject {
-    
+
 }
 
 protocol SignUpPresenter {
@@ -21,7 +21,7 @@ protocol SignUpPresenter {
 class SignUpPresenterImplement {
     fileprivate weak var view: SignUpView?
     fileprivate var router: SignUpRouter?
-    
+
     init(view: SignUpView?, router: SignUpRouter?) {
         self.view = view
         self.router = router
@@ -29,15 +29,15 @@ class SignUpPresenterImplement {
 }
 
 extension SignUpPresenterImplement: SignUpPresenter {
-    
+
     func signUp(_ name: String, _ email: String, _ password: String) {
         router?.gotoHomeVC()
     }
-    
+
     func signIn() {
         router?.gotoSignInVC()
     }
-    
+
     func showTermsAndCodition() {
         //
     }

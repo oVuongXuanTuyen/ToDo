@@ -13,7 +13,7 @@ protocol OverviewConfigurator {
 }
 
 class OverviewConfiguratorImplement {
-    
+
 }
 
 extension OverviewConfiguratorImplement: OverviewConfigurator {
