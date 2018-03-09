@@ -9,6 +9,7 @@
 import UIKit
 
 extension UITableView {
+
     func regisNib(cell: UITableViewCell.Type) {
         let reuseID = String(describing: cell)
         self.register(UINib.init(nibName: reuseID, bundle: nil), forCellReuseIdentifier: reuseID)

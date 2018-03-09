@@ -10,9 +10,20 @@ import UIKit
 import SwiftHEXColors
 
 extension UIColor {
-    static let completed = UIColor.init(hexString: "#50D2C2")
-    static let snoozed = UIColor.init(hexString: "#FCAB53")
-    static let overdue = UIColor.init(hexString: "#8C88FF")
-    static let subTextColor = UIColor.init(hexString: "#BCBBBE")
-    static let mainColor = UIColor.init(hexString: "#FD3366")
+
+    class var completed: UIColor {
+        return UIColor(hexString: "#50D2C2")!
+    }
+    class var snoozed: UIColor {
+        return UIColor(hexString: "#FCAB53")!
+    }
+    class var overdue: UIColor {
+        return UIColor(hexString: "#8C88FF")!
+    }
+    class var subTextColor: UIColor {
+        return UIColor(hexString: "#BCBBBE")!
+    }
+    class var mainColor: UIColor {
+        return UIColor.init(hexString: "#FD3366")!
+    }
 }
