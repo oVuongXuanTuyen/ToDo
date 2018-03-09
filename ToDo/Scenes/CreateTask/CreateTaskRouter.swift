@@ -9,17 +9,16 @@
 import UIKit
 
 protocol CreateTaskRouter {
-  
 }
 
 class CreateTaskRouterImplement {
-  weak var viewController: CreateTaskViewController?
+    weak var viewController: CreateTaskViewController?
 
-  init(viewController: CreateTaskViewController) {
-    self.viewController = viewController
-  }
+    init(viewController: CreateTaskViewController) {
+        self.viewController = viewController
+    }
 }
 
 extension CreateTaskRouterImplement: CreateTaskRouter {
-  
+
 }

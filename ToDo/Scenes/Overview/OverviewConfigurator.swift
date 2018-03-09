@@ -9,17 +9,17 @@
 import Foundation
 
 protocol OverviewConfigurator {
-  func config(viewController: OverviewViewController)
+    func config(viewController: OverviewViewController)
 }
 
 class OverviewConfiguratorImplement {
-  
+
 }
 
 extension OverviewConfiguratorImplement: OverviewConfigurator {
-  func config(viewController: OverviewViewController) {
-    let router = OverviewRouterImplement.init(viewController: viewController)
-    let presenter = OverviewPresenterImplement.init(view: viewController, router: router)
-    viewController.presenter = presenter
-  }
+    func config(viewController: OverviewViewController) {
+        let router = OverviewRouterImplement.init(viewController: viewController)
+        let presenter = OverviewPresenterImplement.init(view: viewController, router: router)
+        viewController.presenter = presenter
+    }
 }

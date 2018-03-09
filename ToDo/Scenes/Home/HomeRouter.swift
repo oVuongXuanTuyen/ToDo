@@ -9,19 +9,19 @@
 import Foundation
 
 protocol HomeRouter {
-  func gotoCreateTaskVC()
+    func gotoCreateTaskVC()
 }
 class HomeRouterImplement {
-  weak var viewController: HomeViewController?
+    weak var viewController: HomeViewController?
 
-  init(viewController: HomeViewController) {
-    self.viewController = viewController
-  }
+    init(viewController: HomeViewController) {
+        self.viewController = viewController
+    }
 }
 
 extension HomeRouterImplement: HomeRouter {
-  func gotoCreateTaskVC() {
-    let createTaskVC = CreateTaskViewController.loadFromStoryboard(.home)
-    viewController?.navigationController?.pushViewController(createTaskVC, animated: true)
-  }
+    func gotoCreateTaskVC() {
+        let createTaskVC = CreateTaskViewController.loadFromStoryboard(.home)
+        viewController?.navigationController?.pushViewController(createTaskVC, animated: true)
+    }
 }

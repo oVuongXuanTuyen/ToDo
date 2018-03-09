@@ -46,7 +46,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjB-rp-8lV">
-                                <rect key="frame" x="260" y="123" width="45" height="45"/>
+                                <rect key="frame" x="260" y="140" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="93M-QG-FpD"/>
@@ -97,7 +97,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="overviewType" value="completed"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ju-SE-qYq" customClass="CircleView" customModule="ToDo" customModuleProvider="target">
+                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ju-SE-qYq" customClass="CircleView" customModule="ToDo" customModuleProvider="target">
                                         <rect key="frame" x="189" y="174" width="87.5" height="92"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="overviewType" value="snoozed"/>
@@ -107,7 +107,7 @@
                                         <rect key="frame" x="131" y="174" width="58" height="120"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-Ib-ChE" customClass="CircleView" customModule="ToDo" customModuleProvider="target">
+                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-Ib-ChE" customClass="CircleView" customModule="ToDo" customModuleProvider="target">
                                         <rect key="frame" x="44" y="174" width="87" height="92"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="f4h-Ib-ChE" secondAttribute="height" multiplier="1:1" constant="-5" id="zzE-Yu-WKJ"/>
@@ -151,7 +151,7 @@
                             <constraint firstItem="xtT-If-UQ4" firstAttribute="top" secondItem="lbm-pV-tFw" secondAttribute="bottom" id="av6-4N-nyC"/>
                             <constraint firstItem="wPQ-9S-RLC" firstAttribute="height" secondItem="G6H-IG-yHK" secondAttribute="height" multiplier="5/14" id="bmH-iq-9Bz"/>
                             <constraint firstItem="7Wg-y8-yAl" firstAttribute="height" secondItem="1YP-kZ-AFj" secondAttribute="height" id="bok-Fr-LZY"/>
-                            <constraint firstItem="2t3-cm-1v5" firstAttribute="top" secondItem="JjB-rp-8lV" secondAttribute="bottom" constant="35" id="fZT-mr-oJF"/>
+                            <constraint firstItem="2t3-cm-1v5" firstAttribute="top" secondItem="JjB-rp-8lV" secondAttribute="bottom" constant="18" id="fZT-mr-oJF"/>
                             <constraint firstItem="xtT-If-UQ4" firstAttribute="leading" secondItem="kI4-G0-qPy" secondAttribute="leading" id="gKp-hX-o5n"/>
                             <constraint firstItem="wPQ-9S-RLC" firstAttribute="top" secondItem="G6H-IG-yHK" secondAttribute="top" id="k4f-b7-bDJ"/>
                             <constraint firstItem="2t3-cm-1v5" firstAttribute="top" secondItem="wPQ-9S-RLC" secondAttribute="bottom" id="qpc-6T-81Z"/>

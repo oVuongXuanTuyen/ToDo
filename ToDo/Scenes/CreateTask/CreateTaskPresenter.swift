@@ -9,23 +9,22 @@
 import UIKit
 
 protocol CreateTaskView: AnyObject {
-  //
+    //
 }
 
 protocol CreateTaskPresenter {
-  //
+    //
 }
 
 class CreateTaskPresenterImplement {
-  private weak var view: CreateTaskView?
-  private var router: CreateTaskRouter?
+    private weak var view: CreateTaskView?
+    private var router: CreateTaskRouter?
 
-  init(view: CreateTaskView?, router: CreateTaskRouter?) {
-    self.view = view
-    self.router = router
-  }
+    init(view: CreateTaskView?, router: CreateTaskRouter?) {
+        self.view = view
+        self.router = router
+    }
 }
 
 extension CreateTaskPresenterImplement: CreateTaskPresenter {
-  
 }

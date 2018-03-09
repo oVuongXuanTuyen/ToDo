@@ -9,20 +9,19 @@
 import UIKit
 
 class CreateTaskViewController: BaseViewController {
-  var presenter: CreateTaskPresenter?
-  var configurator: CreateTaskConfigurator?
+    var presenter: CreateTaskPresenter?
+    var configurator: CreateTaskConfigurator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      configurator?.config(viewController: self)
-      createRightButton()
+        configurator?.config(viewController: self)
+        createRightButton()
     }
-  // MARK: - Init
-  func createRightButton() {
-    setRightButton(icon: #imageLiteral(resourceName: "ic_option"))
-  }
+    // MARK: - Init
+    func createRightButton() {
+        setRightButton(icon: #imageLiteral(resourceName: "ic_option"))
+    }
 }
 
 extension CreateTaskViewController: CreateTaskView {
-  
 }

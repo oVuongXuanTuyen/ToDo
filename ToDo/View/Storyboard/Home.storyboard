@@ -76,7 +76,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qcs-ED-JIv">
-                                <rect key="frame" x="315" y="340" width="45" height="45"/>
+                                <rect key="frame" x="315" y="357" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="EH2-VR-1xR"/>
@@ -118,7 +118,7 @@
                             <constraint firstItem="YbV-Xp-U5G" firstAttribute="top" secondItem="i11-6A-OyQ" secondAttribute="bottom" id="kmx-Sg-58H"/>
                             <constraint firstItem="BHX-CN-ueC" firstAttribute="bottom" secondItem="YbV-Xp-U5G" secondAttribute="bottom" id="l5D-FN-ZGc"/>
                             <constraint firstItem="YbV-Xp-U5G" firstAttribute="leading" secondItem="BHX-CN-ueC" secondAttribute="leading" id="qFN-di-uL9"/>
-                            <constraint firstItem="i11-6A-OyQ" firstAttribute="top" secondItem="Qcs-ED-JIv" secondAttribute="bottom" constant="35" id="qxc-fB-wlD"/>
+                            <constraint firstItem="i11-6A-OyQ" firstAttribute="top" secondItem="Qcs-ED-JIv" secondAttribute="bottom" constant="18" id="qxc-fB-wlD"/>
                             <constraint firstItem="BHX-CN-ueC" firstAttribute="trailing" secondItem="Qcs-ED-JIv" secondAttribute="trailing" constant="15" id="seS-D8-ZFf"/>
                             <constraint firstItem="i11-6A-OyQ" firstAttribute="top" secondItem="MNa-TD-dsc" secondAttribute="bottom" id="vFH-MZ-39y"/>
                         </constraints>
@@ -160,7 +160,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="301-aK-aTF">
-                                <rect key="frame" x="315" y="153.5" width="45" height="45"/>
+                                <rect key="frame" x="315" y="170.5" width="45" height="45"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="301-aK-aTF" secondAttribute="height" multiplier="1:1" id="Asa-Ja-5RC"/>
@@ -342,7 +342,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fZX-Y4-RHW" firstAttribute="top" secondItem="dw8-ag-mGJ" secondAttribute="bottom" id="4LP-Gf-mpK"/>
-                            <constraint firstItem="fZX-Y4-RHW" firstAttribute="top" secondItem="301-aK-aTF" secondAttribute="bottom" constant="35" id="5n7-Hq-Opr"/>
+                            <constraint firstItem="fZX-Y4-RHW" firstAttribute="top" secondItem="301-aK-aTF" secondAttribute="bottom" constant="18" id="5n7-Hq-Opr"/>
                             <constraint firstItem="HLh-QQ-vrw" firstAttribute="leading" secondItem="dA3-z5-AP1" secondAttribute="leading" constant="15" id="5nb-fO-j4F"/>
                             <constraint firstItem="dw8-ag-mGJ" firstAttribute="leading" secondItem="dA3-z5-AP1" secondAttribute="leading" id="6yw-kX-a9f"/>
                             <constraint firstItem="MGh-on-52e" firstAttribute="centerX" secondItem="dA3-z5-AP1" secondAttribute="centerX" id="9zP-0w-TO4"/>

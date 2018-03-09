@@ -9,29 +9,33 @@
 import Foundation
 
 protocol SignInRouter {
-  func gotoSignUpVC()
-  func gotoHomeVC()
+    func gotoSignUpVC()
+    func gotoHomeVC()
 }
 
 class SignInRouterImplement {
-  fileprivate weak var viewController: SignInViewController?
+    fileprivate weak var viewController: SignInViewController?
 
-  init(viewController: SignInViewController) {
-    self.viewController = viewController
-  }
+    init(viewController: SignInViewController) {
+        self.viewController = viewController
+    }
 }
 
 extension SignInRouterImplement: SignInRouter {
 
-  func gotoSignUpVC() {
-    guard let signUpVC = SignUpViewController.loadFromStoryboard(.accout) as? SignUpViewController else { return }
-    let configurator = SignUpConfiguratorImplement.init()
-    signUpVC.configurator = configurator
-    viewController?.present(signUpVC, animated: true, completion: nil)
-  }
-  func gotoHomeVC() {
-    guard let startVC = viewController?.presentingViewController as? StartViewController else { return }
-    viewController?.dismiss(animated: true, completion: nil)
-    startVC.showHome()
-  }
+    func gotoSignUpVC() {
+        guard let signUpVC = SignUpViewController.loadFromStoryboard(.accout) as? SignUpViewController else {
+            return
+        }
+        let configurator = SignUpConfiguratorImplement.init()
+        signUpVC.configurator = configurator
+        viewController?.present(signUpVC, animated: true, completion: nil)
+    }
+    func gotoHomeVC() {
+        guard let startVC = viewController?.presentingViewController as? StartViewController else {
+            return
+        }
+        viewController?.dismiss(animated: true, completion: nil)
+        startVC.showHome()
+    }
 }

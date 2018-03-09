@@ -1,14 +1,14 @@
 //
-//  DiagonalView.swift
+//  DiagonalSeperatorView.swift
 //  ToDo
 //
-//  Created by TuyenVX on 3/1/18.
+//  Created by TuyenVX on 3/9/18.
 //  Copyright © 2018 TuyenVX. All rights reserved.
 //
 
 import UIKit
 
-class DiagonalView: UIView {
+class DiagonalSeperatorView: UIView {
     @IBInspectable var fillColor: UIColor = .white {
         didSet {
             setNeedsLayout()
@@ -17,7 +17,7 @@ class DiagonalView: UIView {
     let points = [
         CGPoint.zero,
         CGPoint(x: 0, y: 1),
-        CGPoint(x: 1, y: 1),
+        CGPoint(x: 1, y: -39),
         CGPoint(x: 1, y: -40)
     ]
     private lazy var shapeLayer: CAShapeLayer = {
@@ -39,5 +39,4 @@ class DiagonalView: UIView {
 
     private func convert(_ relativePoint: CGPoint) -> CGPoint {
         return CGPoint(x: relativePoint.x * bounds.width + bounds.origin.x, y: relativePoint.y * bounds.height + bounds.origin.y)
-    }
-}
+    }}

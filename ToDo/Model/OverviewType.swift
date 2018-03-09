@@ -9,7 +9,7 @@
 import Foundation
 
 enum OverviewType: String {
-  case completed = "COMPLETED"
-  case snoozed = "SNOOZED"
-  case overdue = "OVERDUE"
+    case completed = "COMPLETED"
+    case snoozed = "SNOOZED"
+    case overdue = "OVERDUE"
 }
