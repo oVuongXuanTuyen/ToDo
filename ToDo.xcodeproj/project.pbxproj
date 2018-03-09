@@ -28,6 +28,13 @@
 		CC04E28520512D9A00D0F23E /* GroupsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */; };
 		CC04E28620512D9A00D0F23E /* GroupsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */; };
 		CC09BD312052186F007634D9 /* DiagonalSeperatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD302052186F007634D9 /* DiagonalSeperatorView.swift */; };
+		CC09BD3420525D9A007634D9 /* ListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD3320525D9A007634D9 /* ListsViewController.swift */; };
+		CC09BD36205264B8007634D9 /* Lists.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC09BD35205264B8007634D9 /* Lists.storyboard */; };
+		CC09BD3820526FFA007634D9 /* ListsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD3720526FFA007634D9 /* ListsRouter.swift */; };
+		CC09BD3A20527006007634D9 /* ListsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD3920527006007634D9 /* ListsPresenter.swift */; };
+		CC09BD3C20527013007634D9 /* ListsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD3B20527013007634D9 /* ListsConfigurator.swift */; };
+		CC09BD41205274B5007634D9 /* ListsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09BD3F205274B5007634D9 /* ListsTableViewCell.swift */; };
+		CC09BD42205274B5007634D9 /* ListsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC09BD40205274B5007634D9 /* ListsTableViewCell.xib */; };
 		CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */; };
 		CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */; };
 		CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */; };
@@ -115,6 +122,13 @@
 		CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsTableViewCell.swift; sourceTree = "<group>"; };
 		CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsTableViewCell.xib; sourceTree = "<group>"; };
 		CC09BD302052186F007634D9 /* DiagonalSeperatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagonalSeperatorView.swift; sourceTree = "<group>"; };
+		CC09BD3320525D9A007634D9 /* ListsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsViewController.swift; sourceTree = "<group>"; };
+		CC09BD35205264B8007634D9 /* Lists.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lists.storyboard; sourceTree = "<group>"; };
+		CC09BD3720526FFA007634D9 /* ListsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsRouter.swift; sourceTree = "<group>"; };
+		CC09BD3920527006007634D9 /* ListsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsPresenter.swift; sourceTree = "<group>"; };
+		CC09BD3B20527013007634D9 /* ListsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsConfigurator.swift; sourceTree = "<group>"; };
+		CC09BD3F205274B5007634D9 /* ListsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsTableViewCell.swift; sourceTree = "<group>"; };
+		CC09BD40205274B5007634D9 /* ListsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListsTableViewCell.xib; sourceTree = "<group>"; };
 		CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
 		CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 		CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConfigurator.swift; sourceTree = "<group>"; };
@@ -293,6 +307,35 @@
 			path = Groups;
 			sourceTree = "<group>";
 		};
+		CC09BD3220525D6D007634D9 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				CC09BD3320525D9A007634D9 /* ListsViewController.swift */,
+				CC09BD3720526FFA007634D9 /* ListsRouter.swift */,
+				CC09BD3920527006007634D9 /* ListsPresenter.swift */,
+				CC09BD3B20527013007634D9 /* ListsConfigurator.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		CC09BD3D2052748C007634D9 /* GroupCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */,
+				CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */,
+			);
+			path = GroupCell;
+			sourceTree = "<group>";
+		};
+		CC09BD3E2052749C007634D9 /* ListsCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC09BD3F205274B5007634D9 /* ListsTableViewCell.swift */,
+				CC09BD40205274B5007634D9 /* ListsTableViewCell.xib */,
+			);
+			path = ListsCell;
+			sourceTree = "<group>";
+		};
 		CC1E89E920455F1B00149D97 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +346,7 @@
 				CCEDE858204E85DF00E44FA5 /* Calendar.storyboard */,
 				CCB38B21204FB6F3007A9C2F /* Overview.storyboard */,
 				CC04E278205120CF00D0F23E /* Groups.storyboard */,
+				CC09BD35205264B8007634D9 /* Lists.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -337,6 +381,7 @@
 		CC1E89ED2045647900149D97 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CC09BD3220525D6D007634D9 /* Lists */,
 				CC04E27A205120F700D0F23E /* Groups */,
 				CCB38B23204FB816007A9C2F /* Overview */,
 				CCEDE853204E855C00E44FA5 /* Calendar */,
@@ -431,9 +476,9 @@
 		CC86303320495C3B002911F2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				CC09BD3E2052749C007634D9 /* ListsCell */,
+				CC09BD3D2052748C007634D9 /* GroupCell */,
 				CC86303420495C4C002911F2 /* TaskCell */,
-				CC04E28320512D9A00D0F23E /* GroupsTableViewCell.swift */,
-				CC04E28420512D9A00D0F23E /* GroupsTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -609,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC86303820495C79002911F2 /* TaskTableViewCell.xib in Resources */,
+				CC09BD42205274B5007634D9 /* ListsTableViewCell.xib in Resources */,
 				CCB38B22204FB6F3007A9C2F /* Overview.storyboard in Resources */,
 				CC82F766203FCC5300CE0A0A /* LaunchScreen.storyboard in Resources */,
 				CC82F763203FCC5300CE0A0A /* Assets.xcassets in Resources */,
@@ -616,6 +662,7 @@
 				CC04E279205120CF00D0F23E /* Groups.storyboard in Resources */,
 				CC82F761203FCC5300CE0A0A /* Main.storyboard in Resources */,
 				CC04E28620512D9A00D0F23E /* GroupsTableViewCell.xib in Resources */,
+				CC09BD36205264B8007634D9 /* Lists.storyboard in Resources */,
 				CC024A5720463D41000C4F1D /* Home.storyboard in Resources */,
 				CCEDE859204E85DF00E44FA5 /* Calendar.storyboard in Resources */,
 			);
@@ -834,16 +881,19 @@
 				CC6B93D6204789EA006E6282 /* SignInPresenter.swift in Sources */,
 				CC04E28520512D9A00D0F23E /* GroupsTableViewCell.swift in Sources */,
 				CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */,
+				CC09BD3420525D9A007634D9 /* ListsViewController.swift in Sources */,
 				CC04E2772050CCB000D0F23E /* OverviewType.swift in Sources */,
 				CCB38B29204FB93B007A9C2F /* OverviewPresenter.swift in Sources */,
 				CC997C042048E20B008DCB15 /* HomePresenter.swift in Sources */,
 				CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */,
 				CC6B93D420478910006E6282 /* SignInViewController.swift in Sources */,
+				CC09BD3820526FFA007634D9 /* ListsRouter.swift in Sources */,
 				CC997C0A2048E23E008DCB15 /* HomeViewController.swift in Sources */,
 				CC024A5220463BB5000C4F1D /* UIViewController+Extensions.swift in Sources */,
 				CC997C082048E22B008DCB15 /* HomeConfigurator.swift in Sources */,
 				CC024A712046B422000C4F1D /* MenuViewController.swift in Sources */,
 				CCEDE852204E27C600E44FA5 /* CreateTaskConfigurator.swift in Sources */,
+				CC09BD3A20527006007634D9 /* ListsPresenter.swift in Sources */,
 				CC024A6820465609000C4F1D /* UIScreen+Extensions.swift in Sources */,
 				CCEDE850204E27B100E44FA5 /* CreateTaskPresenter.swift in Sources */,
 				CCB38B25204FB82E007A9C2F /* OverviewViewController.swift in Sources */,
@@ -851,6 +901,7 @@
 				CC024A5020463AED000C4F1D /* UIView+Extensions.swift in Sources */,
 				CC6B93DC20479873006E6282 /* DiagonalView.swift in Sources */,
 				CC024A5F20464A9D000C4F1D /* MainTabbarController.swift in Sources */,
+				CC09BD3C20527013007634D9 /* ListsConfigurator.swift in Sources */,
 				CC024A4E2046393B000C4F1D /* UIStoryboard+Extensions.swift in Sources */,
 				CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */,
 				CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */,
@@ -861,6 +912,7 @@
 				CC04E2822051216C00D0F23E /* GroupsConfigurator.swift in Sources */,
 				CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */,
 				CC6B93DA20478A1D006E6282 /* SignInRouter.swift in Sources */,
+				CC09BD41205274B5007634D9 /* ListsTableViewCell.swift in Sources */,
 				CC04E27E2051214D00D0F23E /* GroupsRouter.swift in Sources */,
 				CC82F75C203FCC5300CE0A0A /* AppDelegate.swift in Sources */,
 				CC024A6420464F0B000C4F1D /* BaseViewController.swift in Sources */,

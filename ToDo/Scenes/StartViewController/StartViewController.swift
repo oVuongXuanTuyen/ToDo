@@ -77,7 +77,7 @@ class StartViewController: UIViewController {
     }
 
     func showLogin() {
-        guard let signInVC = UIStoryboard.accout.instantiateInitialViewController() as? SignInViewController else {
+        guard let signInVC = UIStoryboard.account.instantiateInitialViewController() as? SignInViewController else {
             return
         }
         tabbarContainerView.isHidden = true

@@ -9,7 +9,7 @@
 import Foundation
 
 protocol GroupsRouter {
-
+    func gotoListVC()
 }
 
 class GroupsRouterImplement {
@@ -21,5 +21,8 @@ class GroupsRouterImplement {
 }
 
 extension GroupsRouterImplement: GroupsRouter {
-
+    
+    func gotoListVC() {
+        viewController?.tabBarController?.selectedIndex = 4
+    }
 }
