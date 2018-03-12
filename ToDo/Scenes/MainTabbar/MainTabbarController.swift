@@ -16,6 +16,7 @@ class MainTabbarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDefaults()
+        self.moreNavigationController.navigationBar.isHidden = true
     }
 
     func setDefaults() {
@@ -67,8 +68,14 @@ class MainTabbarController: UITabBarController {
         }
         let listsConfigurator = ListsConfiguratorImplement()
         listsVC.configurator = listsConfigurator
+        // Profile VC
+        guard  let profileVC = ProfileViewController.loadFromStoryboard(UIStoryboard.account) as? ProfileViewController else {
+            return
+        }
+        let profileConfigurator = ProfileConfiguratorImplement()
+        profileVC.configurator = profileConfigurator
         //
-        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, listsNC]
+        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, listsNC, profileVC]
         setViewControllers(viewControllers, animated: false)
     }
 }
