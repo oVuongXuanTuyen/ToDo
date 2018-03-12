@@ -1,5 +1,5 @@
 //
-//  ListsViewController.swift
+//  ProfileViewController.swift
 //  ToDo
 //
 //  Created by TuyenVX on 3/9/18.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ListsViewController: BaseViewController {
+class ProfileViewController: BaseViewController {
 
-    var presenter: ListsPresenter?
-    var configurator: ListsConfigurator?
+    var presenter: ProfilePresenter?
+    var configurator: ProfileConfigurator?
     @IBOutlet weak private var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -22,12 +22,10 @@ class ListsViewController: BaseViewController {
     }
 
     func createRightButton() {
-        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
-    }
-
-    @IBAction func addItem(_ sender: Any) {
+        setRightButton(icon: #imageLiteral(resourceName: "ic_share"))
     }
 }
-extension ListsViewController: ListsView {
+
+extension ProfileViewController: ProfileView {
 
 }

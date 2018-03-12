@@ -21,7 +21,7 @@ class GroupsRouterImplement {
 }
 
 extension GroupsRouterImplement: GroupsRouter {
-    
+
     func gotoListVC() {
         viewController?.tabBarController?.selectedIndex = 4
     }
