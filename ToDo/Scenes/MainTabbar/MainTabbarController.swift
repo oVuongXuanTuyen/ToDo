@@ -74,8 +74,17 @@ class MainTabbarController: UITabBarController {
         }
         let profileConfigurator = ProfileConfiguratorImplement()
         profileVC.configurator = profileConfigurator
+        // Timeline VC
+        guard let timelineNC = UIStoryboard.timeline.instantiateInitialViewController() as? UINavigationController else {
+            return
+        }
+        guard let timelineVC = timelineNC.topViewController as? TimelineViewController else {
+            return
+        }
+        let timelineConfigurator = TimelineConfiguratorImplement.init()
+        timelineVC.configurator = timelineConfigurator
         //
-        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, listsNC, profileVC]
+        let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, listsNC, profileVC, timelineNC]
         setViewControllers(viewControllers, animated: false)
     }
 }
