@@ -9,10 +9,26 @@
 import UIKit
 
 extension UIStoryboard {
-    static let main = UIStoryboard.init(name: "Main", bundle: nil)
-    static let accout = UIStoryboard.init(name: "Account", bundle: nil)
-    static let home = UIStoryboard.init(name: "Home", bundle: nil)
-    static let calendar = UIStoryboard.init(name: "Calendar", bundle: nil)
-    static let overview = UIStoryboard.init(name: "Overview", bundle: nil)
-    static let groups = UIStoryboard.init(name: "Groups", bundle: nil)
+
+    class var main: UIStoryboard {
+        return UIStoryboard.init(name: "Main", bundle: nil)
+    }
+    class var account: UIStoryboard {
+        return UIStoryboard.init(name: "Account", bundle: nil)
+    }
+    class var home: UIStoryboard {
+        return UIStoryboard.init(name: "Home", bundle: nil)
+    }
+    class var calendar: UIStoryboard {
+        return UIStoryboard.init(name: "Calendar", bundle: nil)
+    }
+    class var overview: UIStoryboard {
+        return UIStoryboard.init(name: "Overview", bundle: nil)
+    }
+    class var groups: UIStoryboard {
+        return UIStoryboard.init(name: "Groups", bundle: nil)
+    }
+    class var lists: UIStoryboard {
+        return UIStoryboard.init(name: "Lists", bundle: nil)
+    }
 }

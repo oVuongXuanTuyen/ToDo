@@ -57,6 +57,8 @@ extension GroupsPresenterImplement: UITableViewDelegate {
 
 extension GroupsPresenterImplement: GroupsTableViewCellDelegate {
     func didSelectedRowAtIndex(_ index: Int) {
-        print(index)
+        if index < 8 {
+            router?.gotoListVC()
+        }
     }
 }

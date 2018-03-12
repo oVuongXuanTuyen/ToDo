@@ -94,11 +94,11 @@ class CircleView: UIView {
         var color = UIColor.init()
         switch overviewType {
         case .completed:
-            color = UIColor.completed!
+            color = UIColor.completed
         case .snoozed:
-            color = UIColor.snoozed!
+            color = UIColor.snoozed
         case .overdue:
-            color = UIColor.overdue!
+            color = UIColor.overdue
         }
         circleLayer.strokeColor = color.cgColor
         circleLayer.lineWidth = 2.4

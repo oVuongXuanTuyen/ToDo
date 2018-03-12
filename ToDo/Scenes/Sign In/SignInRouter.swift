@@ -24,7 +24,7 @@ class SignInRouterImplement {
 extension SignInRouterImplement: SignInRouter {
 
     func gotoSignUpVC() {
-        guard let signUpVC = SignUpViewController.loadFromStoryboard(.accout) as? SignUpViewController else {
+        guard let signUpVC = SignUpViewController.loadFromStoryboard(.account) as? SignUpViewController else {
             return
         }
         let configurator = SignUpConfiguratorImplement.init()
