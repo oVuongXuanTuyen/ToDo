@@ -19,6 +19,11 @@ class BaseViewController: UIViewController {
         initImageView()
         setDefaults()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mainTabbarVC?.startVC?.delegate = self
+    }
     // MARK: - Defaults
     func setDefaults() {
     }
@@ -99,5 +104,11 @@ class BaseViewController: UIViewController {
 extension BaseViewController {
     var mainTabbarVC: MainTabbarController? {
         return self.tabBarController as? MainTabbarController
+    }
+}
+
+extension BaseViewController: MenuViewControllerDelegate {
+    func close() {
+        hideMenu()
     }
 }

@@ -42,6 +42,8 @@
 		CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */; };
 		CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */; };
 		CC1970FF204F904000FC64D5 /* CalendarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */; };
+		CC4534AF205684020079F070 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4534AD205684020079F070 /* SettingTableViewCell.swift */; };
+		CC4534B0205684020079F070 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC4534AE205684020079F070 /* SettingTableViewCell.xib */; };
 		CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3242047D34F00A00449 /* SignUpViewController.swift */; };
 		CC6AF3272047DAD300A00449 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */; };
 		CC6AF3292047DAEB00A00449 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */; };
@@ -78,6 +80,10 @@
 		CCE56BBC20560EA500CFA2BC /* Timeline.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE56BBB20560EA500CFA2BC /* Timeline.storyboard */; };
 		CCE56BC02056178300CFA2BC /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE56BBE2056178300CFA2BC /* TimelineTableViewCell.swift */; };
 		CCE56BC12056178300CFA2BC /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCE56BBF2056178300CFA2BC /* TimelineTableViewCell.xib */; };
+		CCE56BC420562A8900CFA2BC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE56BC320562A8900CFA2BC /* SettingViewController.swift */; };
+		CCE56BC620562A9700CFA2BC /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE56BC520562A9700CFA2BC /* SettingRouter.swift */; };
+		CCE56BC820562AA100CFA2BC /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE56BC720562AA100CFA2BC /* SettingPresenter.swift */; };
+		CCE56BCA20562AAB00CFA2BC /* SettingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE56BC920562AAB00CFA2BC /* SettingConfigurator.swift */; };
 		CCEDE84E204E27A100E44FA5 /* CreateTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE84D204E27A100E44FA5 /* CreateTaskRouter.swift */; };
 		CCEDE850204E27B100E44FA5 /* CreateTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE84F204E27B100E44FA5 /* CreateTaskPresenter.swift */; };
 		CCEDE852204E27C600E44FA5 /* CreateTaskConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEDE851204E27C600E44FA5 /* CreateTaskConfigurator.swift */; };
@@ -147,6 +153,8 @@
 		CC1970FA204F901D00FC64D5 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
 		CC1970FC204F902E00FC64D5 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
 		CC1970FE204F904000FC64D5 /* CalendarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarConfigurator.swift; sourceTree = "<group>"; };
+		CC4534AD205684020079F070 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		CC4534AE205684020079F070 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
 		CC6AF3242047D34F00A00449 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CC6AF3262047DAD300A00449 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
 		CC6AF3282047DAEB00A00449 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
@@ -189,6 +197,10 @@
 		CCE56BBB20560EA500CFA2BC /* Timeline.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timeline.storyboard; sourceTree = "<group>"; };
 		CCE56BBE2056178300CFA2BC /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		CCE56BBF2056178300CFA2BC /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		CCE56BC320562A8900CFA2BC /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		CCE56BC520562A9700CFA2BC /* SettingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
+		CCE56BC720562AA100CFA2BC /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		CCE56BC920562AAB00CFA2BC /* SettingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingConfigurator.swift; sourceTree = "<group>"; };
 		CCEDE84D204E27A100E44FA5 /* CreateTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskRouter.swift; sourceTree = "<group>"; };
 		CCEDE84F204E27B100E44FA5 /* CreateTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskPresenter.swift; sourceTree = "<group>"; };
 		CCEDE851204E27C600E44FA5 /* CreateTaskConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskConfigurator.swift; sourceTree = "<group>"; };
@@ -356,7 +368,7 @@
 				CC09BD40205274B5007634D9 /* ListsTableViewCell.xib */,
 			);
 			path = ListsCell;
-						sourceTree = "<group>";
+			sourceTree = "<group>";
 		};
 		CC09BD4320528359007634D9 /* Profile */ = {
 			isa = PBXGroup;
@@ -418,6 +430,7 @@
 				CC09BD3220525D6D007634D9 /* Lists */,
 				CC09BD4320528359007634D9 /* Profile */,
 				CCE56BAE20560B8D00CFA2BC /* Timeline */,
+				CCE56BC220562A1F00CFA2BC /* Setting */,
 				CC04E27A205120F700D0F23E /* Groups */,
 				CCB38B23204FB816007A9C2F /* Overview */,
 				CCEDE853204E855C00E44FA5 /* Calendar */,
@@ -431,6 +444,15 @@
 				CC024A582046420B000C4F1D /* MainTabbar */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CC4534AC205683DF0079F070 /* SettingCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC4534AD205684020079F070 /* SettingTableViewCell.swift */,
+				CC4534AE205684020079F070 /* SettingTableViewCell.xib */,
+			);
+			path = SettingCell;
 			sourceTree = "<group>";
 		};
 		CC6AF3232047D2FB00A00449 /* Sign Up */ = {
@@ -512,6 +534,8 @@
 		CC86303320495C3B002911F2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				CC4534AC205683DF0079F070 /* SettingCell */,
+				CCE56BBD2056175E00CFA2BC /* TimelineCell */,
 				CC09BD3E2052749C007634D9 /* ListsCell */,
 				CC09BD3D2052748C007634D9 /* GroupCell */,
 				CC86303420495C4C002911F2 /* TaskCell */,
@@ -522,7 +546,6 @@
 		CC86303420495C4C002911F2 /* TaskCell */ = {
 			isa = PBXGroup;
 			children = (
-				CCE56BBD2056175E00CFA2BC /* TimelineCell */,
 				CC86303520495C79002911F2 /* TaskTableViewCell.swift */,
 				CC86303620495C79002911F2 /* TaskTableViewCell.xib */,
 			);
@@ -580,6 +603,17 @@
 				CCE56BBF2056178300CFA2BC /* TimelineTableViewCell.xib */,
 			);
 			path = TimelineCell;
+			sourceTree = "<group>";
+		};
+		CCE56BC220562A1F00CFA2BC /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				CCE56BC320562A8900CFA2BC /* SettingViewController.swift */,
+				CCE56BC520562A9700CFA2BC /* SettingRouter.swift */,
+				CCE56BC720562AA100CFA2BC /* SettingPresenter.swift */,
+				CCE56BC920562AAB00CFA2BC /* SettingConfigurator.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		CCEDE853204E855C00E44FA5 /* Calendar */ = {
@@ -718,6 +752,7 @@
 				CCE56BC12056178300CFA2BC /* TimelineTableViewCell.xib in Resources */,
 				CC024A5520463D32000C4F1D /* Account.storyboard in Resources */,
 				CC04E279205120CF00D0F23E /* Groups.storyboard in Resources */,
+				CC4534B0205684020079F070 /* SettingTableViewCell.xib in Resources */,
 				CC82F761203FCC5300CE0A0A /* Main.storyboard in Resources */,
 				CC04E28620512D9A00D0F23E /* GroupsTableViewCell.xib in Resources */,
 				CC09BD36205264B8007634D9 /* Lists.storyboard in Resources */,
@@ -939,6 +974,7 @@
 				CC04E27C2051210F00D0F23E /* GroupsViewController.swift in Sources */,
 				CC09BD312052186F007634D9 /* DiagonalSeperatorView.swift in Sources */,
 				CCE56BBA20560C2500CFA2BC /* TimelineConfigurator.swift in Sources */,
+				CCE56BC820562AA100CFA2BC /* SettingPresenter.swift in Sources */,
 				CC6B93D6204789EA006E6282 /* SignInPresenter.swift in Sources */,
 				CC04E28520512D9A00D0F23E /* GroupsTableViewCell.swift in Sources */,
 				CC1970FD204F902E00FC64D5 /* CalendarPresenter.swift in Sources */,
@@ -951,6 +987,7 @@
 				CC09BD3820526FFA007634D9 /* ListsRouter.swift in Sources */,
 				CC997C0A2048E23E008DCB15 /* HomeViewController.swift in Sources */,
 				CC024A5220463BB5000C4F1D /* UIViewController+Extensions.swift in Sources */,
+				CC4534AF205684020079F070 /* SettingTableViewCell.swift in Sources */,
 				CC997C082048E22B008DCB15 /* HomeConfigurator.swift in Sources */,
 				CC024A712046B422000C4F1D /* MenuViewController.swift in Sources */,
 				CCEDE852204E27C600E44FA5 /* CreateTaskConfigurator.swift in Sources */,
@@ -960,10 +997,12 @@
 				CCB38B25204FB82E007A9C2F /* OverviewViewController.swift in Sources */,
 				CC6B93D820478A0F006E6282 /* SignInConfigurator.swift in Sources */,
 				CC024A5020463AED000C4F1D /* UIView+Extensions.swift in Sources */,
+				CCE56BCA20562AAB00CFA2BC /* SettingConfigurator.swift in Sources */,
 				CC6B93DC20479873006E6282 /* DiagonalView.swift in Sources */,
 				CC09BD49205283C2007634D9 /* ProfilePresenter.swift in Sources */,
 				CC024A5F20464A9D000C4F1D /* MainTabbarController.swift in Sources */,
 				CC09BD3C20527013007634D9 /* ListsConfigurator.swift in Sources */,
+				CCE56BC620562A9700CFA2BC /* SettingRouter.swift in Sources */,
 				CC024A4E2046393B000C4F1D /* UIStoryboard+Extensions.swift in Sources */,
 				CC6AF3252047D34F00A00449 /* SignUpViewController.swift in Sources */,
 				CC1970FB204F901D00FC64D5 /* CalendarRouter.swift in Sources */,
@@ -983,6 +1022,7 @@
 				CC024A6420464F0B000C4F1D /* BaseViewController.swift in Sources */,
 				CCE56BB620560C0700CFA2BC /* TimelineViewController.swift in Sources */,
 				CC024A6A204663CA000C4F1D /* UIColor+Extensions.swift in Sources */,
+				CCE56BC420562A8900CFA2BC /* SettingViewController.swift in Sources */,
 				CCEDE84E204E27A100E44FA5 /* CreateTaskRouter.swift in Sources */,
 				CC997C0D2048E9D3008DCB15 /* CreateTaskViewController.swift in Sources */,
 				CCB38B2B204FB94B007A9C2F /* OverviewConfigurator.swift in Sources */,

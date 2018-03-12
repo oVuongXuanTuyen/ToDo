@@ -12,7 +12,7 @@ class TimelineViewController: BaseViewController {
     var presenter: TimelinePresenter?
     var configurator: TimelineConfigurator?
     @IBOutlet weak private var tableView: UITableView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)
