@@ -18,12 +18,10 @@ class GroupsViewController: BaseViewController {
         super.viewDidLoad()
         configurator?.config(viewController: self)
         presenter?.configTableView(tableView)
-        createRightButton()
+        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
+        setMenuTitle("Groups")
     }
     // MARK: - Init
-    func createRightButton() {
-        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
-    }
 }
 extension GroupsViewController: GroupsView {
 

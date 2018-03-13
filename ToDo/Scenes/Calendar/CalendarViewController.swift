@@ -19,7 +19,8 @@ class CalendarViewController: BaseViewController {
         super.viewDidLoad()
         configurator?.config(viewController: self)
         presenter?.configTableView(tableView)
-        createRightButton()
+        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
+        setMenuTitle("March 2018")
     }
     // MARK: - Init
     override func setDefaults() {
@@ -39,9 +40,6 @@ class CalendarViewController: BaseViewController {
         for date in dates {
             calendar.select(date)
         }
-    }
-    func createRightButton() {
-        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
     }
 }
 

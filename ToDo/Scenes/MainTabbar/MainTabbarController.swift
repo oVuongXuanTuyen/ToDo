@@ -92,6 +92,7 @@ class MainTabbarController: UITabBarController {
         //
         let viewControllers = [homeNC, calendarNC, overviewNC, groupsNC, listsNC, profileVC, timelineNC, settingVC]
         setViewControllers(viewControllers, animated: false)
+        selectedIndex = 0
     }
 }
 

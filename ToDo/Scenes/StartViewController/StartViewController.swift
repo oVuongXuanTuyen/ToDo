@@ -51,6 +51,7 @@ class StartViewController: UIViewController {
     }
 
     func showHome() {
+        mainTabbarController?.setVC()
         showTabbar()
         tabbarContainerView.isHidden = false
         menuContainerView.isHidden = false
@@ -58,14 +59,6 @@ class StartViewController: UIViewController {
     }
 
     func showTabbar() {
-//        if let navigationController = self.mainTabbarController?.selectedViewController as? UINavigationController {
-//            if let baseVC = navigationController.topViewController as? BaseViewController {
-//                baseVC.hideMenu()
-//            }
-//        }
-//        if let baseVC = self.mainTabbarController?.selectedViewController as? BaseViewController {
-//            baseVC.hideMenu()
-//        }
 
         UIView.animate(withDuration: 0.28) {
             self.menuContainerView.frame = CGRect.init(x: -UIScreen.width, y: 0, width: UIScreen.width, height: UIScreen.height)

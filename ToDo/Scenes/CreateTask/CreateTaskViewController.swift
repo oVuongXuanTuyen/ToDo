@@ -15,11 +15,8 @@ class CreateTaskViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configurator?.config(viewController: self)
-        createRightButton()
-    }
-    // MARK: - Init
-    func createRightButton() {
         setRightButton(icon: #imageLiteral(resourceName: "ic_option"))
+        setMenuTitle("Create New")
     }
 }
 

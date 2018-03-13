@@ -18,11 +18,8 @@ class ListsViewController: BaseViewController {
         super.viewDidLoad()
         configurator?.config(viewController: self)
         presenter?.configTableView(tableView)
-        createRightButton()
-    }
-
-    func createRightButton() {
         setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
+        setMenuTitle("Lists")
     }
 
     @IBAction func addItem(_ sender: Any) {

@@ -20,6 +20,7 @@ class SettingViewController: BaseViewController {
         configurator?.config(viewController: self)
         presenter?.config(tableView: tableView)
         setRightButton(icon: #imageLiteral(resourceName: "ic_option"))
+        setMenuTitle("Settings")
     }
     // MARK: - IBAction
     @IBAction func generalSetting(_ sender: UIButton) {

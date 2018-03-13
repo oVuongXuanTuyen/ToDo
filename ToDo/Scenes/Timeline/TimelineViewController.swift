@@ -18,6 +18,7 @@ class TimelineViewController: BaseViewController {
         configurator?.config(viewController: self)
         presenter?.config(tableView: tableView)
         setRightButton(icon: #imageLiteral(resourceName: "ic_option"))
+        setMenuTitle("Timeline")
     }
 
     override func didReceiveMemoryWarning() {

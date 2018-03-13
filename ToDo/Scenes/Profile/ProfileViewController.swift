@@ -18,12 +18,10 @@ class ProfileViewController: BaseViewController {
         super.viewDidLoad()
         configurator?.config(viewController: self)
         presenter?.configTableView(tableView)
-        createRightButton()
+        setRightButton(icon: #imageLiteral(resourceName: "ic_share"))
+        setMenuTitle("Profile")
     }
 
-    func createRightButton() {
-        setRightButton(icon: #imageLiteral(resourceName: "ic_share"))
-    }
 }
 
 extension ProfileViewController: ProfileView {

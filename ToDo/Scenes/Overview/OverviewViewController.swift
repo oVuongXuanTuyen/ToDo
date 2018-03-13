@@ -20,6 +20,8 @@ class OverviewViewController: BaseViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
+        setMenuTitle("Overview")
         completedCircleView.type = .completed
         completedCircleView.addCircle(percent: 0.6, total: 100)
         overdueCircleView.type = .overdue
@@ -29,10 +31,6 @@ class OverviewViewController: BaseViewController {
         completedCircleView.animateCircle(1.5)
         overdueCircleView.animateCircle(1.5)
         snoozedCircleView.animateCircle(1.5)
-    }
-    // MARK: - Init
-    func createRightButton() {
-        setRightButton(icon: #imageLiteral(resourceName: "ic_search"))
     }
 }
 extension OverviewViewController: OverviewView {

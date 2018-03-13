@@ -29,11 +29,19 @@ class BaseViewController: UIViewController {
     }
 
     func setMenuItem() {
-        let menuButton = UIButton.init(frame: CGRect.init(x: 15, y: 20, width: 30, height: 30))
-        menuButton.imageEdgeInsets = UIEdgeInsets.init(top: 5, left: 5, bottom: 5, right: 5)
+        let menuButton = UIButton(frame: CGRect(x: 15, y: 20, width: 30, height: 30))
+        menuButton.imageEdgeInsets = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
         menuButton.setImage(#imageLiteral(resourceName: "ic_menu"), for: .normal)
         menuButton.addTarget(self, action: #selector(showMenu), for: .touchUpInside)
         self.view.addSubview(menuButton)
+    }
+
+    func setMenuTitle(_ title: String) {
+        let menuTitleLabel = UILabel(frame: CGRect(x: 60, y: 20, width: 150, height: 30))
+        menuTitleLabel.textColor = .white
+        menuTitleLabel.font = .systemFont(ofSize: 15)
+        menuTitleLabel.text = title
+        view.addSubview(menuTitleLabel)
     }
 
     func setRightButton(icon: UIImage) {
